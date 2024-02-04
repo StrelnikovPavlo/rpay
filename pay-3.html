@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Settings</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240204233604">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20240204233604"></script>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="page">
+			<div class="pay">
+				<div class="pay__overlay">
+					<form action="#" class="pay__body">
+						<div class="pay__logo">
+							<img src="img/pay/logo.svg" alt="">
+						</div>
+						<div class="pay__sum">Select currency</div>
+						<div class="pay__usd">54 USD</div>
+						<div class="pay__network">Select Network</div>
+						<div class="pay__timer timer-pay">
+							<div class="timer-pay__circle">
+								<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+									<mask id="path-1-inside-1_81_473" fill="white">
+										<path d="M20 2.43515C20 1.09025 21.0943 -0.015306 22.4293 0.148033C26.3988 0.633734 30.1522 2.30185 33.1869 4.9632C36.835 8.16246 39.1956 12.5788 39.8289 17.3895C40.4622 22.2001 39.3251 27.077 36.6294 31.1114C33.9337 35.1458 29.8632 38.0627 25.1764 39.3185C20.4896 40.5743 15.506 40.0835 11.1542 37.9375C6.80246 35.7914 3.37925 32.1365 1.52241 27.6537C-0.334435 23.1709 -0.49828 18.1659 1.0614 13.5712C2.35884 9.74907 4.77535 6.42772 7.97021 4.02232C9.04464 3.2134 10.5451 3.62368 11.2176 4.78839C11.89 5.9531 11.4749 7.42856 10.433 8.27898C8.24726 10.0631 6.59052 12.4344 5.67322 15.1367C4.49335 18.6125 4.6173 22.3987 6.02197 25.7899C7.42665 29.1811 10.0162 31.946 13.3083 33.5694C16.6004 35.1929 20.3703 35.5642 23.9159 34.6142C27.4614 33.6642 30.5406 31.4576 32.5799 28.4056C34.6192 25.3536 35.4794 21.6644 35.0003 18.0252C34.5212 14.386 32.7354 11.0451 29.9757 8.62488C27.8302 6.74329 25.2097 5.51799 22.4247 5.06581C21.0972 4.85027 20 3.78004 20 2.43515Z" />
+									</mask>
+									<path d="M20 2.43515C20 1.09025 21.0943 -0.015306 22.4293 0.148033C26.3988 0.633734 30.1522 2.30185 33.1869 4.9632C36.835 8.16246 39.1956 12.5788 39.8289 17.3895C40.4622 22.2001 39.3251 27.077 36.6294 31.1114C33.9337 35.1458 29.8632 38.0627 25.1764 39.3185C20.4896 40.5743 15.506 40.0835 11.1542 37.9375C6.80246 35.7914 3.37925 32.1365 1.52241 27.6537C-0.334435 23.1709 -0.49828 18.1659 1.0614 13.5712C2.35884 9.74907 4.77535 6.42772 7.97021 4.02232C9.04464 3.2134 10.5451 3.62368 11.2176 4.78839C11.89 5.9531 11.4749 7.42856 10.433 8.27898C8.24726 10.0631 6.59052 12.4344 5.67322 15.1367C4.49335 18.6125 4.6173 22.3987 6.02197 25.7899C7.42665 29.1811 10.0162 31.946 13.3083 33.5694C16.6004 35.1929 20.3703 35.5642 23.9159 34.6142C27.4614 33.6642 30.5406 31.4576 32.5799 28.4056C34.6192 25.3536 35.4794 21.6644 35.0003 18.0252C34.5212 14.386 32.7354 11.0451 29.9757 8.62488C27.8302 6.74329 25.2097 5.51799 22.4247 5.06581C21.0972 4.85027 20 3.78004 20 2.43515Z" stroke="#46DFC2" stroke-width="10" mask="url(#path-1-inside-1_81_473)" />
+								</svg>
+							</div>
+							<div class="timer-pay__column">
+								<div class="timer-pay__label">Expiration time</div>
+								<div class="timer-pay__values timer-pay__values_green">00:00:00</div>
+							</div>
+						</div>
+						<span class="line"></span>
+						<div class="pay__input">
+							<label for="pay-email" class="pay__input-label">Please enter your email:</label>
+							<input data-validate id="pay-email" type="email" name="pay-email">
+						</div>
+						<div class="pay__select">
+							<div class="pay__select-head">
+								<div class="pay__select-value">Currency</div>
+							</div>
+							<div class="pay__select-body">
+								<div class="pay__select-item">
+									Currency
+								</div>
+								<div class="pay__select-item">
+									Currency
+								</div>
+								<div class="pay__select-item">
+									Currency
+								</div>
+							</div>
+						</div>
+						<div class="pay__select">
+							<div class="pay__select-head">
+								<div class="pay__select-value">Select Network</div>
+							</div>
+							<div class="pay__select-body">
+								<div class="pay__select-item">
+									Network
+								</div>
+								<div class="pay__select-item">
+									Network
+								</div>
+								<div class="pay__select-item">
+									Network
+								</div>
+							</div>
+						</div>
+						<button type="submit" class="pay__button">Pay</button>
+						<div class="pay__lead">Please <a href="#">contact us</a> if you shoot any trouble</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20240204233604"></script>
+	<div id="log-out" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout">
+				<div class="logout__title">Log Out</div>
+				<p class="logout__subtitle">Are you sure you want to log out?</p>
+				<div class="logout__row">
+					<button type="button" class="logout__cansel button" data-close>Cancel</button>
+					<button type="button" class="logout__log button" data-close>Log Out</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--  -->
+
+	<div id="deactivation" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout">
+				<div class="logout__title">Deactivation of 2FA</div>
+				<p class="logout__subtitle">Are you sure you want to deactivate 2FA?</p>
+				<div class="logout__row">
+					<button type="button" class="logout__cansel button" data-close>Cancel</button>
+					<button type="button" class="logout__log button" data-close>Confirm</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--  -->
+
+	<div id="autoconvert" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="logout__title logout__title-left">Autoconvert to USDT</div>
+				<p class="logout__subtitle logout__title-left">Select the currency for conversion</p>
+				<div class="transfer__select select-transfer">
+					<div class="select-transfer__selected">
+						<div class="select-transfer__amn table-amount btc">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+					</div>
+					<div class="select-transfer__list">
+						<div class="select-transfer__amn table-amount btc">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+						<div class="select-transfer__amn table-amount ltc">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+						<div class="select-transfer__amn table-amount usdt">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+						<div class="select-transfer__amn table-amount bnb">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-account__input">
+					<input autocomplete="off" type="number" name="2FACode" placeholder="2 FA Code" class="input">
+				</div>
+				<div class="logout__row">
+					<button type="button" class="logout__cansel button" data-close>Cancel</button>
+					<button type="button" class="logout__cansel button" data-close>Activate</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--  -->
+
+
+	<div id="transfer" aria-hidden="true" class="popup transfer">
+		<div class="popup__wrapper">
+			<div class="popup__content logout">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="transfer__title">Transfer</div>
+				<p class="transfer__subtitle">Transfer money between balances</p>
+				<div class="transfer__curn">
+					<div class="transfer__select select-transfer">
+						<div class="select-transfer__selected">
+							<div class="select-transfer__amn table-amount btc">
+								<div class="txn-dashboard__amount-overlay">
+									<span>BTC</span>
+									<span>Bitcoin</span>
+								</div>
+							</div>
+						</div>
+						<div class="select-transfer__list">
+							<div class="select-transfer__amn table-amount ltc">
+								<div class="txn-dashboard__amount-overlay">
+									<span>BTC</span>
+									<span>Bitcoin</span>
+								</div>
+							</div>
+							<div class="select-transfer__amn table-amount usdt">
+								<div class="txn-dashboard__amount-overlay">
+									<span>BTC</span>
+									<span>Bitcoin</span>
+								</div>
+							</div>
+							<div class="select-transfer__amn table-amount bnb">
+								<div class="txn-dashboard__amount-overlay">
+									<span>BTC</span>
+									<span>Bitcoin</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="transfer__change _icon-change"></button>
+					<div class="transfer__select select-transfer">
+						<div class="select-transfer__selected">
+							<div class="select-transfer__amn table-amount ltc">
+								<div class="txn-dashboard__amount-overlay">
+									<span>BTC</span>
+									<span>Bitcoin</span>
+								</div>
+							</div>
+						</div>
+						<div class="select-transfer__list">
+							<div class="select-transfer__amn table-amount usdc">
+								<div class="txn-dashboard__amount-overlay">
+									<span>BTC</span>
+									<span>Bitcoin</span>
+								</div>
+							</div>
+							<div class="select-transfer__amn table-amount xrp">
+								<div class="txn-dashboard__amount-overlay">
+									<span>BTC</span>
+									<span>Bitcoin</span>
+								</div>
+							</div>
+							<div class="select-transfer__amn table-amount ada">
+								<div class="txn-dashboard__amount-overlay">
+									<span>BTC</span>
+									<span>Bitcoin</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="transfer__input">
+					<label for="amount" class="transfer__label">Available: <span>$4534</span></label>
+					<input id="amount" autocomplete="off" type="text" name="Amount" placeholder="Amount" class="input">
+				</div>
+				<div class="transfer__input">
+					<input autocomplete="off" type="number" name="code 2fa" placeholder="2 FA Code" class="input">
+				</div>
+				<button type="button" class="transfer__button button">Transfer</button>
+			</div>
+		</div>
+	</div>
+
+
+	<!--  -->
+
+
+
+	<div id="withdraw" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout transfer">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="transfer__title">Withdraw</div>
+				<p class="transfer__subtitle">Withdraw money to your wallet</p>
+				<div class="transfer__select select-transfer">
+					<div class="select-transfer__selected">
+						<div class="select-transfer__amn table-amount btc">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+					</div>
+					<div class="select-transfer__list">
+						<div class="select-transfer__amn table-amount ltc">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+						<div class="select-transfer__amn table-amount usdt">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+						<div class="select-transfer__amn table-amount bnb">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<select name="Chain Type">
+					<option value="1" selected>Chain Type</option>
+					<option value="2">Chain Type</option>
+					<option value="3">Chain Type</option>
+					<option value="4">Chain Type</option>
+				</select>
+				<div class="transfer__input">
+					<input autocomplete="off" type="text" name="Wallet Address" placeholder="Wallet Address" class="input">
+				</div>
+				<div class="transfer__input">
+					<label for="amount" class="transfer__label">Available: <a href="#">$4534</a></label>
+					<input id="amount" autocomplete="off" type="text" name="Amount" placeholder="Amount" class="input">
+				</div>
+				<div class="transfer__lead">
+					<div>Transaction fee <span>....................................................................................................................................................</span>
+						<p>1 BTC</p>
+					</div>
+					<div>I'm receive <span>....................................................................................................................................................</span>
+						<p>1 BTC</p>
+					</div>
+				</div>
+				<button type="button" class="transfer__button button">Withdraw</button>
+			</div>
+		</div>
+	</div>
+
+
+	<!--  -->
+
+
+	<div id="top-up" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout transfer">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="transfer__title">Top Up Order</div>
+				<p class="transfer__subtitle">Create top up order</p>
+				<div class="transfer__select select-transfer">
+					<div class="select-transfer__selected">
+						<div class="select-transfer__amn table-amount btc">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+					</div>
+					<div class="select-transfer__list">
+						<div class="select-transfer__amn table-amount ltc">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+						<div class="select-transfer__amn table-amount usdt">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+						<div class="select-transfer__amn table-amount bnb">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="transfer__input">
+					<input autocomplete="off" type="text" name="Wallet Address" placeholder="Wallet Address" class="input">
+				</div>
+				<button type="button" class="transfer__button button">Generate Order</button>
+			</div>
+		</div>
+	</div>
+
+	<!--  -->
+
+
+	<div id="top-up-order" aria-hidden="true" class="popup transfer">
+		<div class="popup__wrapper">
+			<div class="popup__content logout">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="transfer__title">Top Up Order</div>
+				<p class="transfer__subtitle">Create top up order</p>
+				<div class="transfer__select select-transfer">
+					<div class="select-transfer__selected">
+						<div class="select-transfer__amn table-amount btc">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+					</div>
+					<div class="select-transfer__list">
+						<div class="select-transfer__amn table-amount ltc">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+						<div class="select-transfer__amn table-amount usdt">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+						<div class="select-transfer__amn table-amount bnb">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="transfer__input">
+					<input autocomplete="off" type="text" name="amount" placeholder="Amount" class="input">
+				</div>
+				<div data-copy class="transfer__info">
+					<div class="transfer__info-title">Top Up Order</div>
+					<div class="transfer__info-subtitle">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+					<div data-copy-text class="transfer__info-cod">8vn35yn3847wy58734y5734u834m9y5vn3047</div>
+					<button data-copy-button type="button" class="transfer__info-copy _icon-copy">Copy</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--  -->
+
+
+	<div id="Confirm" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout transfer">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="transfer__title">Confirm transfer</div>
+				<p class="transfer__subtitle">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				<button type="button" class="transfer__button transfer__button-grey button">Confirm transfer in <span> 5 </span> sec...</button>
+			</div>
+		</div>
+	</div>
+
+	<!--  -->
+
+	<div id="Confirm_2" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout transfer">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="transfer__title">Confirm transfer</div>
+				<p class="transfer__subtitle">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				<button type="button" class="transfer__button button">Transfer</button>
+			</div>
+		</div>
+	</div>
+
+
+	<!--  -->
+
+	<div id="delete-transaction" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout">
+				<div class="logout__title">Delete transaction</div>
+				<p class="logout__subtitle">Are you sure you want to remove the tranzation?</p>
+				<div class="logout__row">
+					<button type="button" class="logout__cansel button" data-close>Cancel</button>
+					<button type="button" class="logout__log button">Confirm delete in 5 sec...</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--  -->
+
+	<div id="confirm-withdraw" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout transfer">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="transfer__title">Confirm</div>
+				<p class="transfer__subtitle">Confirm withdraw</p>
+				<div class="transfer__input">
+					<input autocomplete="off" type="text" name="Code" placeholder="2 FA Code" class="input">
+				</div>
+				<div class="transfer__lead">
+					<div>Currency<span>....................................................................................................................................................</span>
+						<p>Bitcoin</p>
+					</div>
+					<div>Network<span>....................................................................................................................................................</span>
+						<p>Bitcoin</p>
+					</div>
+					<div>Transaction fee <span>....................................................................................................................................................</span>
+						<p>1 BTC</p>
+					</div>
+					<div>I'm receive <span>....................................................................................................................................................</span>
+						<p>1 BTC</p>
+					</div>
+				</div>
+				<button type="button" class="transfer__button button">Withdraw</button>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--  -->
+
+	<div id="delete-transaction-autoconvert" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="logout__title logout__title-left">Delete transaction</div>
+				<p class="logout__subtitle logout__title-left">Are you sure you want to remove the tranzation?</p>
+				<div class="form-account__input">
+					<input autocomplete="off" type="number" name="2FACode" placeholder="2 FA Code" class="input">
+				</div>
+				<div class="logout__row">
+					<button type="button" class="logout__cansel button" data-close>Cancel</button>
+					<button type="button" class="logout__log button" data-close>Delete</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--  -->
+
+	<div id="filters" aria-hidden="true" class="popup filters">
+		<div class="popup__wrapper">
+			<div class="popup__content logout">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="logout__title logout__title-left">Filters</div>
+				<div class="filters__select">
+					<div class="filters__select-head">
+						<span>Currency</span>
+						<div class="filters__select-icon"></div>
+					</div>
+					<div class="filters__select-dropdown">
+						<div class="filters__select-item">Currency 2</div>
+						<div class="filters__select-item">Currency 3</div>
+						<div class="filters__select-item">Currency 4</div>
+					</div>
+				</div>
+				<div class="filters__select">
+					<div class="filters__select-head">
+						<span>Status</span>
+						<div class="filters__select-icon"></div>
+					</div>
+					<div class="filters__select-dropdown">
+						<div class="filters__select-item">Status 2</div>
+						<div class="filters__select-item">Status 3</div>
+						<div class="filters__select-item">Status 4</div>
+					</div>
+				</div>
+				<div class="filters__actions">
+					<button type="button" class="filters__reset">Reset Filter</button>
+					<button type="button" class="filters__apply">Apply Filter</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--  -->
+
+	<div id="email-send" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="logout__title logout__title-left">Leave your email</div>
+				<p class="logout__subtitle logout__title-left">When your payment status will change, we'll send to you notification</p>
+				<div class="form-account__input">
+					<input autocomplete="off" type="number" name="Email" placeholder="Email" class="input">
+				</div>
+				<button type="submit" class="logout__send">Send</button>
+			</div>
+		</div>
+	</div>
+
+	<!--  -->
+
+	<div id="success" aria-hidden="true" class="popup success">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="success__icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
+						<circle cx="27.5" cy="27.5" r="27.5" fill="#46DFC2" />
+						<path d="M24.5996 36.6666C24.0916 36.6666 23.6091 36.462 23.2535 36.1039L16.0661 28.8652C15.3295 28.1235 15.3295 26.8957 16.0661 26.1539C16.8026 25.4121 18.0217 25.4121 18.7582 26.1539L24.5996 32.037L37.6538 18.8896C38.3903 18.1479 39.6094 18.1479 40.3459 18.8896C41.0824 19.6314 41.0824 20.8592 40.3459 21.601L25.9456 36.1039C25.5901 36.462 25.1075 36.6666 24.5996 36.6666Z" fill="white" />
+					</svg>
+				</div>
+				<div class="success__label">Success</div>
+				<div class="success__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</div>
+				<button data-close type="button" class="success__close">Close</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

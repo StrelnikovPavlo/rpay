@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>API Keys</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240204233604">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20240204233604"></script>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="page">
+			<aside class="sidebar">
+				<a data-da=".header__container, 991.98, first" href="/" class="sidebar__logo">
+					<img src="img/logo.svg" alt="Logo" width="116" height="22">
+				</a>
+				<nav class="sidebar__nav">
+					<ul>
+						<li>
+							<a href="#" class="_icon-dashboard _active">Dashboard</a>
+						</li>
+						<li>
+							<a href="#" class="_icon-balance">Balance</a>
+						</li>
+						<li>
+							<a href="#" class="_icon-transactions">Transactions</a>
+						</li>
+						<li>
+							<a href="#" class="_icon-wallets">Wallets</a>
+						</li>
+						<li>
+							<a href="#" class="_icon-settings">Settings</a>
+						</li>
+					</ul>
+				</nav>
+				<hr>
+				<a href="#" class="sidebar__support">Support</a>
+			</aside>
+			<main class="main">
+				<header class="header">
+					<div class="header__container">
+						<div class="header__info info-header">
+							<h1 class="info-header__title">API Keys</h1>
+							<time datetime="2023-03-27">March 27th, 2023</time>
+						</div>
+						<div class="header__user user-header">
+							<img src="img/avatar.svg" alt="Avatar" width="43" height="43">
+							<span>Product Name</span>
+							<div class="user-header__dropdown dropdown-user">
+								<div class="dropdown-user__info">
+									<img src="img/avatar.svg" alt="Avatar" width="73" height="73">
+									<span>Product Name</span>
+								</div>
+								<hr>
+								<a data-popup="#log-out" data-da=".sidebar, 991.98" href="#" class="dropdown-user__logout _icon-logout">Log out</a>
+							</div>
+						</div>
+						<button type="button" class="icon-menu"><span></span></button>
+					</div>
+				</header>
+				<section class="api-key">
+					<div class="api-key__container">
+						<div class="api-key__header wallets__header header-wallets">
+							<form action="#" class="header-wallets__search header-transactions__search">
+								<button type="submit" class="header-transactions__search-btn _icon-search"></button>
+								<input autocomplete="off" type="text" name="search" placeholder="Search..." class="input">
+								<button type="button" class="header-transactions__search-clear _icon-clear"></button>
+							</form>
+							<button type="button" class="header-wallets__create">
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+									<path d="M6 0C2.694 0 0 2.694 0 6C0 9.306 2.694 12 6 12C9.306 12 12 9.306 12 6C12 2.694 9.306 0 6 0ZM8.4 6.45H6.45V8.4C6.45 8.646 6.246 8.85 6 8.85C5.754 8.85 5.55 8.646 5.55 8.4V6.45H3.6C3.354 6.45 3.15 6.246 3.15 6C3.15 5.754 3.354 5.55 3.6 5.55H5.55V3.6C5.55 3.354 5.754 3.15 6 3.15C6.246 3.15 6.45 3.354 6.45 3.6V5.55H8.4C8.646 5.55 8.85 5.754 8.85 6C8.85 6.246 8.646 6.45 8.4 6.45Z" fill="white" />
+								</svg>
+								<span>Create Order</span>
+							</button>
+						</div>
+						<div class="api-key__body">
+							<div class="api-key__table">
+								<div class="api-key__table-desktop">
+									<div class="table-api-key__head">
+										<div class="table-api-key__head-row">
+											<div class="table-api-key__head-item">API Key</div>
+											<div class="table-api-key__head-item">Settings</div>
+											<div class="table-api-key__head-item">Allowed IP</div>
+										</div>
+										<div class="table-api-key__head-item">Action</div>
+									</div>
+									<div class="table-api-key__body">
+										<div class="block-table-api">
+											<div class="block-table-api__main">
+												<div class="block-table-api__row">
+													<div class="block-table-api__value">325872365701289350789623765</div>
+													<div class="block-table-api__value">Withdraw, Deposit</div>
+													<div class="block-table-api__value">176.103.60.245:8000</div>
+												</div>
+												<button type="button" class="block-table-api__more block-table__more"></button>
+											</div>
+											<div class="block-table-api__details">
+												<div class="block-table-api__details-row">
+													<button type="button" class="details-table__delete _icon-delete"><span>Delete</span></button>
+													<button type="button" class="block-table-api__details-regenerate">
+														<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+															<path d="M7.5 0C3.36 0 0 3.36 0 7.5C0 11.64 3.36 15 7.5 15C11.64 15 15 11.64 15 7.5C15 3.36 11.64 0 7.5 0ZM3.45 6.9225C3.5775 6.03 3.975 5.2275 4.5975 4.5975C6.0975 3.105 8.46 3.0225 10.065 4.3275V3.615C10.065 3.3075 10.32 3.0525 10.6275 3.0525C10.935 3.0525 11.19 3.3075 11.19 3.615V5.6175C11.19 5.925 10.935 6.18 10.6275 6.18H8.625C8.3175 6.18 8.0625 5.925 8.0625 5.6175C8.0625 5.31 8.3175 5.055 8.625 5.055H9.1875C8.025 4.245 6.42 4.3575 5.385 5.3925C4.935 5.8425 4.65 6.4275 4.5525 7.08C4.515 7.3575 4.275 7.56 3.9975 7.56C3.9675 7.56 3.945 7.56 3.915 7.5525C3.6225 7.515 3.405 7.23 3.45 6.9225ZM10.4025 10.4025C9.6 11.205 8.55 11.6025 7.5 11.6025C6.585 11.6025 5.6775 11.28 4.9275 10.6725V11.3775C4.9275 11.685 4.6725 11.94 4.365 11.94C4.0575 11.94 3.8025 11.685 3.8025 11.3775V9.375C3.8025 9.0675 4.0575 8.8125 4.365 8.8125H6.3675C6.675 8.8125 6.93 9.0675 6.93 9.375C6.93 9.6825 6.675 9.9375 6.3675 9.9375H5.805C6.9675 10.7475 8.5725 10.635 9.6075 9.6C10.0575 9.15 10.3425 8.565 10.44 7.9125C10.485 7.605 10.7625 7.3875 11.0775 7.4325C11.385 7.4775 11.595 7.7625 11.5575 8.07C11.4225 8.9775 11.025 9.78 10.4025 10.4025Z" fill="#929EB2" />
+														</svg>
+														<span>Regenerate</span>
+													</button>
+													<button type="button" class="details-table__button">Hide</button>
+												</div>
+											</div>
+										</div>
+										<div class="block-table-api">
+											<div class="block-table-api__main">
+												<div class="block-table-api__row">
+													<div class="block-table-api__value">325872365701289350789623765</div>
+													<div class="block-table-api__value">Withdraw, Deposit</div>
+													<div class="block-table-api__value">176.103.60.245:8000</div>
+												</div>
+												<button type="button" class="block-table-api__more block-table__more"></button>
+											</div>
+											<div class="block-table-api__details">
+												<div class="block-table-api__details-row">
+													<button type="button" class="details-table__delete _icon-delete"><span>Delete</span></button>
+													<button type="button" class="block-table-api__details-regenerate">
+														<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+															<path d="M7.5 0C3.36 0 0 3.36 0 7.5C0 11.64 3.36 15 7.5 15C11.64 15 15 11.64 15 7.5C15 3.36 11.64 0 7.5 0ZM3.45 6.9225C3.5775 6.03 3.975 5.2275 4.5975 4.5975C6.0975 3.105 8.46 3.0225 10.065 4.3275V3.615C10.065 3.3075 10.32 3.0525 10.6275 3.0525C10.935 3.0525 11.19 3.3075 11.19 3.615V5.6175C11.19 5.925 10.935 6.18 10.6275 6.18H8.625C8.3175 6.18 8.0625 5.925 8.0625 5.6175C8.0625 5.31 8.3175 5.055 8.625 5.055H9.1875C8.025 4.245 6.42 4.3575 5.385 5.3925C4.935 5.8425 4.65 6.4275 4.5525 7.08C4.515 7.3575 4.275 7.56 3.9975 7.56C3.9675 7.56 3.945 7.56 3.915 7.5525C3.6225 7.515 3.405 7.23 3.45 6.9225ZM10.4025 10.4025C9.6 11.205 8.55 11.6025 7.5 11.6025C6.585 11.6025 5.6775 11.28 4.9275 10.6725V11.3775C4.9275 11.685 4.6725 11.94 4.365 11.94C4.0575 11.94 3.8025 11.685 3.8025 11.3775V9.375C3.8025 9.0675 4.0575 8.8125 4.365 8.8125H6.3675C6.675 8.8125 6.93 9.0675 6.93 9.375C6.93 9.6825 6.675 9.9375 6.3675 9.9375H5.805C6.9675 10.7475 8.5725 10.635 9.6075 9.6C10.0575 9.15 10.3425 8.565 10.44 7.9125C10.485 7.605 10.7625 7.3875 11.0775 7.4325C11.385 7.4775 11.595 7.7625 11.5575 8.07C11.4225 8.9775 11.025 9.78 10.4025 10.4025Z" fill="#929EB2" />
+														</svg>
+														<span>Regenerate</span>
+													</button>
+													<button type="button" class="details-table__button">Hide</button>
+												</div>
+											</div>
+										</div>
+										<div class="block-table-api">
+											<div class="block-table-api__main">
+												<div class="block-table-api__row">
+													<div class="block-table-api__value">325872365701289350789623765</div>
+													<div class="block-table-api__value">Withdraw, Deposit</div>
+													<div class="block-table-api__value">176.103.60.245:8000</div>
+												</div>
+												<button type="button" class="block-table-api__more block-table__more"></button>
+											</div>
+											<div class="block-table-api__details">
+												<div class="block-table-api__details-row">
+													<button type="button" class="details-table__delete _icon-delete"><span>Delete</span></button>
+													<button type="button" class="block-table-api__details-regenerate">
+														<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+															<path d="M7.5 0C3.36 0 0 3.36 0 7.5C0 11.64 3.36 15 7.5 15C11.64 15 15 11.64 15 7.5C15 3.36 11.64 0 7.5 0ZM3.45 6.9225C3.5775 6.03 3.975 5.2275 4.5975 4.5975C6.0975 3.105 8.46 3.0225 10.065 4.3275V3.615C10.065 3.3075 10.32 3.0525 10.6275 3.0525C10.935 3.0525 11.19 3.3075 11.19 3.615V5.6175C11.19 5.925 10.935 6.18 10.6275 6.18H8.625C8.3175 6.18 8.0625 5.925 8.0625 5.6175C8.0625 5.31 8.3175 5.055 8.625 5.055H9.1875C8.025 4.245 6.42 4.3575 5.385 5.3925C4.935 5.8425 4.65 6.4275 4.5525 7.08C4.515 7.3575 4.275 7.56 3.9975 7.56C3.9675 7.56 3.945 7.56 3.915 7.5525C3.6225 7.515 3.405 7.23 3.45 6.9225ZM10.4025 10.4025C9.6 11.205 8.55 11.6025 7.5 11.6025C6.585 11.6025 5.6775 11.28 4.9275 10.6725V11.3775C4.9275 11.685 4.6725 11.94 4.365 11.94C4.0575 11.94 3.8025 11.685 3.8025 11.3775V9.375C3.8025 9.0675 4.0575 8.8125 4.365 8.8125H6.3675C6.675 8.8125 6.93 9.0675 6.93 9.375C6.93 9.6825 6.675 9.9375 6.3675 9.9375H5.805C6.9675 10.7475 8.5725 10.635 9.6075 9.6C10.0575 9.15 10.3425 8.565 10.44 7.9125C10.485 7.605 10.7625 7.3875 11.0775 7.4325C11.385 7.4775 11.595 7.7625 11.5575 8.07C11.4225 8.9775 11.025 9.78 10.4025 10.4025Z" fill="#929EB2" />
+														</svg>
+														<span>Regenerate</span>
+													</button>
+													<button type="button" class="details-table__button">Hide</button>
+												</div>
+											</div>
+										</div>
+										<div class="block-table-api">
+											<div class="block-table-api__main">
+												<div class="block-table-api__row">
+													<div class="block-table-api__value">325872365701289350789623765</div>
+													<div class="block-table-api__value">Withdraw, Deposit</div>
+													<div class="block-table-api__value">176.103.60.245:8000</div>
+												</div>
+												<button type="button" class="block-table-api__more block-table__more"></button>
+											</div>
+											<div class="block-table-api__details">
+												<div class="block-table-api__details-row">
+													<button type="button" class="details-table__delete _icon-delete"><span>Delete</span></button>
+													<button type="button" class="block-table-api__details-regenerate">
+														<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+															<path d="M7.5 0C3.36 0 0 3.36 0 7.5C0 11.64 3.36 15 7.5 15C11.64 15 15 11.64 15 7.5C15 3.36 11.64 0 7.5 0ZM3.45 6.9225C3.5775 6.03 3.975 5.2275 4.5975 4.5975C6.0975 3.105 8.46 3.0225 10.065 4.3275V3.615C10.065 3.3075 10.32 3.0525 10.6275 3.0525C10.935 3.0525 11.19 3.3075 11.19 3.615V5.6175C11.19 5.925 10.935 6.18 10.6275 6.18H8.625C8.3175 6.18 8.0625 5.925 8.0625 5.6175C8.0625 5.31 8.3175 5.055 8.625 5.055H9.1875C8.025 4.245 6.42 4.3575 5.385 5.3925C4.935 5.8425 4.65 6.4275 4.5525 7.08C4.515 7.3575 4.275 7.56 3.9975 7.56C3.9675 7.56 3.945 7.56 3.915 7.5525C3.6225 7.515 3.405 7.23 3.45 6.9225ZM10.4025 10.4025C9.6 11.205 8.55 11.6025 7.5 11.6025C6.585 11.6025 5.6775 11.28 4.9275 10.6725V11.3775C4.9275 11.685 4.6725 11.94 4.365 11.94C4.0575 11.94 3.8025 11.685 3.8025 11.3775V9.375C3.8025 9.0675 4.0575 8.8125 4.365 8.8125H6.3675C6.675 8.8125 6.93 9.0675 6.93 9.375C6.93 9.6825 6.675 9.9375 6.3675 9.9375H5.805C6.9675 10.7475 8.5725 10.635 9.6075 9.6C10.0575 9.15 10.3425 8.565 10.44 7.9125C10.485 7.605 10.7625 7.3875 11.0775 7.4325C11.385 7.4775 11.595 7.7625 11.5575 8.07C11.4225 8.9775 11.025 9.78 10.4025 10.4025Z" fill="#929EB2" />
+														</svg>
+														<span>Regenerate</span>
+													</button>
+													<button type="button" class="details-table__button">Hide</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="api-key__table-mobile">
+									<div class="mobile-wallets__block">
+										<div class="mobile-wallets__main">
+											<div class="mobile-wallets__row">
+												<div class="table-wallets__item">API Key</div>
+												<div class="table-wallets__value">43896703894693476</div>
+											</div>
+											<div class="mobile-wallets__row">
+												<div class="table-wallets__item">Settings</div>
+												<div class="table-wallets__value">Withdraw, Deposit</div>
+											</div>
+											<div class="mobile-wallets__row">
+												<div class="table-wallets__item">Allowed IP</div>
+												<div class="table-wallets__value">176.103.60.245:8000</div>
+											</div>
+										</div>
+										<div class="mobile-wallets__details">
+											<div class="table-wallets__details-row">
+												<button type="button" class="details-table__delete _icon-delete"><span>Delete</span></button>
+												<button type="button" class="block-table-api__details-regenerate">
+													<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+														<path d="M7.5 0C3.36 0 0 3.36 0 7.5C0 11.64 3.36 15 7.5 15C11.64 15 15 11.64 15 7.5C15 3.36 11.64 0 7.5 0ZM3.45 6.9225C3.5775 6.03 3.975 5.2275 4.5975 4.5975C6.0975 3.105 8.46 3.0225 10.065 4.3275V3.615C10.065 3.3075 10.32 3.0525 10.6275 3.0525C10.935 3.0525 11.19 3.3075 11.19 3.615V5.6175C11.19 5.925 10.935 6.18 10.6275 6.18H8.625C8.3175 6.18 8.0625 5.925 8.0625 5.6175C8.0625 5.31 8.3175 5.055 8.625 5.055H9.1875C8.025 4.245 6.42 4.3575 5.385 5.3925C4.935 5.8425 4.65 6.4275 4.5525 7.08C4.515 7.3575 4.275 7.56 3.9975 7.56C3.9675 7.56 3.945 7.56 3.915 7.5525C3.6225 7.515 3.405 7.23 3.45 6.9225ZM10.4025 10.4025C9.6 11.205 8.55 11.6025 7.5 11.6025C6.585 11.6025 5.6775 11.28 4.9275 10.6725V11.3775C4.9275 11.685 4.6725 11.94 4.365 11.94C4.0575 11.94 3.8025 11.685 3.8025 11.3775V9.375C3.8025 9.0675 4.0575 8.8125 4.365 8.8125H6.3675C6.675 8.8125 6.93 9.0675 6.93 9.375C6.93 9.6825 6.675 9.9375 6.3675 9.9375H5.805C6.9675 10.7475 8.5725 10.635 9.6075 9.6C10.0575 9.15 10.3425 8.565 10.44 7.9125C10.485 7.605 10.7625 7.3875 11.0775 7.4325C11.385 7.4775 11.595 7.7625 11.5575 8.07C11.4225 8.9775 11.025 9.78 10.4025 10.4025Z" fill="#929EB2" />
+													</svg>
+													<span>Regenerate</span>
+												</button>
+											</div>
+										</div>
+										<button type="button" class="mobile-wallets__more mobile-table__show-more">
+											Show Details
+											<span></span>
+										</button>
+									</div>
+									<div class="mobile-wallets__block">
+										<div class="mobile-wallets__main">
+											<div class="mobile-wallets__row">
+												<div class="table-wallets__item">API Key</div>
+												<div class="table-wallets__value">43896703894693476</div>
+											</div>
+											<div class="mobile-wallets__row">
+												<div class="table-wallets__item">Settings</div>
+												<div class="table-wallets__value">Withdraw, Deposit</div>
+											</div>
+											<div class="mobile-wallets__row">
+												<div class="table-wallets__item">Allowed IP</div>
+												<div class="table-wallets__value">176.103.60.245:8000</div>
+											</div>
+										</div>
+										<div class="mobile-wallets__details">
+											<div class="table-wallets__details-row">
+												<button type="button" class="details-table__delete _icon-delete"><span>Delete</span></button>
+												<button type="button" class="block-table-api__details-regenerate">
+													<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+														<path d="M7.5 0C3.36 0 0 3.36 0 7.5C0 11.64 3.36 15 7.5 15C11.64 15 15 11.64 15 7.5C15 3.36 11.64 0 7.5 0ZM3.45 6.9225C3.5775 6.03 3.975 5.2275 4.5975 4.5975C6.0975 3.105 8.46 3.0225 10.065 4.3275V3.615C10.065 3.3075 10.32 3.0525 10.6275 3.0525C10.935 3.0525 11.19 3.3075 11.19 3.615V5.6175C11.19 5.925 10.935 6.18 10.6275 6.18H8.625C8.3175 6.18 8.0625 5.925 8.0625 5.6175C8.0625 5.31 8.3175 5.055 8.625 5.055H9.1875C8.025 4.245 6.42 4.3575 5.385 5.3925C4.935 5.8425 4.65 6.4275 4.5525 7.08C4.515 7.3575 4.275 7.56 3.9975 7.56C3.9675 7.56 3.945 7.56 3.915 7.5525C3.6225 7.515 3.405 7.23 3.45 6.9225ZM10.4025 10.4025C9.6 11.205 8.55 11.6025 7.5 11.6025C6.585 11.6025 5.6775 11.28 4.9275 10.6725V11.3775C4.9275 11.685 4.6725 11.94 4.365 11.94C4.0575 11.94 3.8025 11.685 3.8025 11.3775V9.375C3.8025 9.0675 4.0575 8.8125 4.365 8.8125H6.3675C6.675 8.8125 6.93 9.0675 6.93 9.375C6.93 9.6825 6.675 9.9375 6.3675 9.9375H5.805C6.9675 10.7475 8.5725 10.635 9.6075 9.6C10.0575 9.15 10.3425 8.565 10.44 7.9125C10.485 7.605 10.7625 7.3875 11.0775 7.4325C11.385 7.4775 11.595 7.7625 11.5575 8.07C11.4225 8.9775 11.025 9.78 10.4025 10.4025Z" fill="#929EB2" />
+													</svg>
+													<span>Regenerate</span>
+												</button>
+											</div>
+										</div>
+										<button type="button" class="mobile-wallets__more mobile-table__show-more">
+											Show Details
+											<span></span>
+										</button>
+									</div>
+									<div class="mobile-wallets__block">
+										<div class="mobile-wallets__main">
+											<div class="mobile-wallets__row">
+												<div class="table-wallets__item">API Key</div>
+												<div class="table-wallets__value">43896703894693476</div>
+											</div>
+											<div class="mobile-wallets__row">
+												<div class="table-wallets__item">Settings</div>
+												<div class="table-wallets__value">Withdraw, Deposit</div>
+											</div>
+											<div class="mobile-wallets__row">
+												<div class="table-wallets__item">Allowed IP</div>
+												<div class="table-wallets__value">176.103.60.245:8000</div>
+											</div>
+										</div>
+										<div class="mobile-wallets__details">
+											<div class="table-wallets__details-row">
+												<button type="button" class="details-table__delete _icon-delete"><span>Delete</span></button>
+												<button type="button" class="block-table-api__details-regenerate">
+													<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+														<path d="M7.5 0C3.36 0 0 3.36 0 7.5C0 11.64 3.36 15 7.5 15C11.64 15 15 11.64 15 7.5C15 3.36 11.64 0 7.5 0ZM3.45 6.9225C3.5775 6.03 3.975 5.2275 4.5975 4.5975C6.0975 3.105 8.46 3.0225 10.065 4.3275V3.615C10.065 3.3075 10.32 3.0525 10.6275 3.0525C10.935 3.0525 11.19 3.3075 11.19 3.615V5.6175C11.19 5.925 10.935 6.18 10.6275 6.18H8.625C8.3175 6.18 8.0625 5.925 8.0625 5.6175C8.0625 5.31 8.3175 5.055 8.625 5.055H9.1875C8.025 4.245 6.42 4.3575 5.385 5.3925C4.935 5.8425 4.65 6.4275 4.5525 7.08C4.515 7.3575 4.275 7.56 3.9975 7.56C3.9675 7.56 3.945 7.56 3.915 7.5525C3.6225 7.515 3.405 7.23 3.45 6.9225ZM10.4025 10.4025C9.6 11.205 8.55 11.6025 7.5 11.6025C6.585 11.6025 5.6775 11.28 4.9275 10.6725V11.3775C4.9275 11.685 4.6725 11.94 4.365 11.94C4.0575 11.94 3.8025 11.685 3.8025 11.3775V9.375C3.8025 9.0675 4.0575 8.8125 4.365 8.8125H6.3675C6.675 8.8125 6.93 9.0675 6.93 9.375C6.93 9.6825 6.675 9.9375 6.3675 9.9375H5.805C6.9675 10.7475 8.5725 10.635 9.6075 9.6C10.0575 9.15 10.3425 8.565 10.44 7.9125C10.485 7.605 10.7625 7.3875 11.0775 7.4325C11.385 7.4775 11.595 7.7625 11.5575 8.07C11.4225 8.9775 11.025 9.78 10.4025 10.4025Z" fill="#929EB2" />
+													</svg>
+													<span>Regenerate</span>
+												</button>
+											</div>
+										</div>
+										<button type="button" class="mobile-wallets__more mobile-table__show-more">
+											Show Details
+											<span></span>
+										</button>
+									</div>
+									<div class="mobile-wallets__block">
+										<div class="mobile-wallets__main">
+											<div class="mobile-wallets__row">
+												<div class="table-wallets__item">API Key</div>
+												<div class="table-wallets__value">43896703894693476</div>
+											</div>
+											<div class="mobile-wallets__row">
+												<div class="table-wallets__item">Settings</div>
+												<div class="table-wallets__value">Withdraw, Deposit</div>
+											</div>
+											<div class="mobile-wallets__row">
+												<div class="table-wallets__item">Allowed IP</div>
+												<div class="table-wallets__value">176.103.60.245:8000</div>
+											</div>
+										</div>
+										<div class="mobile-wallets__details">
+											<div class="table-wallets__details-row">
+												<button type="button" class="details-table__delete _icon-delete"><span>Delete</span></button>
+												<button type="button" class="block-table-api__details-regenerate">
+													<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+														<path d="M7.5 0C3.36 0 0 3.36 0 7.5C0 11.64 3.36 15 7.5 15C11.64 15 15 11.64 15 7.5C15 3.36 11.64 0 7.5 0ZM3.45 6.9225C3.5775 6.03 3.975 5.2275 4.5975 4.5975C6.0975 3.105 8.46 3.0225 10.065 4.3275V3.615C10.065 3.3075 10.32 3.0525 10.6275 3.0525C10.935 3.0525 11.19 3.3075 11.19 3.615V5.6175C11.19 5.925 10.935 6.18 10.6275 6.18H8.625C8.3175 6.18 8.0625 5.925 8.0625 5.6175C8.0625 5.31 8.3175 5.055 8.625 5.055H9.1875C8.025 4.245 6.42 4.3575 5.385 5.3925C4.935 5.8425 4.65 6.4275 4.5525 7.08C4.515 7.3575 4.275 7.56 3.9975 7.56C3.9675 7.56 3.945 7.56 3.915 7.5525C3.6225 7.515 3.405 7.23 3.45 6.9225ZM10.4025 10.4025C9.6 11.205 8.55 11.6025 7.5 11.6025C6.585 11.6025 5.6775 11.28 4.9275 10.6725V11.3775C4.9275 11.685 4.6725 11.94 4.365 11.94C4.0575 11.94 3.8025 11.685 3.8025 11.3775V9.375C3.8025 9.0675 4.0575 8.8125 4.365 8.8125H6.3675C6.675 8.8125 6.93 9.0675 6.93 9.375C6.93 9.6825 6.675 9.9375 6.3675 9.9375H5.805C6.9675 10.7475 8.5725 10.635 9.6075 9.6C10.0575 9.15 10.3425 8.565 10.44 7.9125C10.485 7.605 10.7625 7.3875 11.0775 7.4325C11.385 7.4775 11.595 7.7625 11.5575 8.07C11.4225 8.9775 11.025 9.78 10.4025 10.4025Z" fill="#929EB2" />
+													</svg>
+													<span>Regenerate</span>
+												</button>
+											</div>
+										</div>
+										<button type="button" class="mobile-wallets__more mobile-table__show-more">
+											Show Details
+											<span></span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="api-key__footer transactions__footer">
+
+
+								<nav class="transactions__pagionation">
+									<ul class="transactions__pagionation-list">
+										<li class="prev"><a href="#"></a></li>
+										<li class="_active"><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li class="dots">...</li>
+										<li><a href="#">5</a></li>
+										<li class="next"><a href="#"></a></li>
+									</ul>
+								</nav>
+								<div class="transactions__line">
+									<div data-da=".transactions__footer, 480" class="transactions__result">Result 25 of 435</div>
+									<div class="transactions__quantity">
+										<div class="transactions__quantity-head">
+											25
+										</div>
+										<div class="transactions__quantity-dropdown">
+											<a href="#" class="transactions__quantity-item">26</a>
+											<a href="#" class="transactions__quantity-item">27</a>
+											<a href="#" class="transactions__quantity-item">28</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20240204233604"></script>
+	<div id="log-out" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout">
+				<div class="logout__title">Log Out</div>
+				<p class="logout__subtitle">Are you sure you want to log out?</p>
+				<div class="logout__row">
+					<button type="button" class="logout__cansel button" data-close>Cancel</button>
+					<button type="button" class="logout__log button" data-close>Log Out</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--  -->
+
+	<div id="deactivation" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout">
+				<div class="logout__title">Deactivation of 2FA</div>
+				<p class="logout__subtitle">Are you sure you want to deactivate 2FA?</p>
+				<div class="logout__row">
+					<button type="button" class="logout__cansel button" data-close>Cancel</button>
+					<button type="button" class="logout__log button" data-close>Confirm</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--  -->
+
+	<div id="autoconvert" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="logout__title logout__title-left">Autoconvert to USDT</div>
+				<p class="logout__subtitle logout__title-left">Select the currency for conversion</p>
+				<div class="transfer__select select-transfer">
+					<div class="select-transfer__selected">
+						<div class="select-transfer__amn table-amount btc">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+					</div>
+					<div class="select-transfer__list">
+						<div class="select-transfer__amn table-amount btc">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+						<div class="select-transfer__amn table-amount ltc">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+						<div class="select-transfer__amn table-amount usdt">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+						<div class="select-transfer__amn table-amount bnb">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-account__input">
+					<input autocomplete="off" type="number" name="2FACode" placeholder="2 FA Code" class="input">
+				</div>
+				<div class="logout__row">
+					<button type="button" class="logout__cansel button" data-close>Cancel</button>
+					<button type="button" class="logout__cansel button" data-close>Activate</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--  -->
+
+
+	<div id="transfer" aria-hidden="true" class="popup transfer">
+		<div class="popup__wrapper">
+			<div class="popup__content logout">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="transfer__title">Transfer</div>
+				<p class="transfer__subtitle">Transfer money between balances</p>
+				<div class="transfer__curn">
+					<div class="transfer__select select-transfer">
+						<div class="select-transfer__selected">
+							<div class="select-transfer__amn table-amount btc">
+								<div class="txn-dashboard__amount-overlay">
+									<span>BTC</span>
+									<span>Bitcoin</span>
+								</div>
+							</div>
+						</div>
+						<div class="select-transfer__list">
+							<div class="select-transfer__amn table-amount ltc">
+								<div class="txn-dashboard__amount-overlay">
+									<span>BTC</span>
+									<span>Bitcoin</span>
+								</div>
+							</div>
+							<div class="select-transfer__amn table-amount usdt">
+								<div class="txn-dashboard__amount-overlay">
+									<span>BTC</span>
+									<span>Bitcoin</span>
+								</div>
+							</div>
+							<div class="select-transfer__amn table-amount bnb">
+								<div class="txn-dashboard__amount-overlay">
+									<span>BTC</span>
+									<span>Bitcoin</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="transfer__change _icon-change"></button>
+					<div class="transfer__select select-transfer">
+						<div class="select-transfer__selected">
+							<div class="select-transfer__amn table-amount ltc">
+								<div class="txn-dashboard__amount-overlay">
+									<span>BTC</span>
+									<span>Bitcoin</span>
+								</div>
+							</div>
+						</div>
+						<div class="select-transfer__list">
+							<div class="select-transfer__amn table-amount usdc">
+								<div class="txn-dashboard__amount-overlay">
+									<span>BTC</span>
+									<span>Bitcoin</span>
+								</div>
+							</div>
+							<div class="select-transfer__amn table-amount xrp">
+								<div class="txn-dashboard__amount-overlay">
+									<span>BTC</span>
+									<span>Bitcoin</span>
+								</div>
+							</div>
+							<div class="select-transfer__amn table-amount ada">
+								<div class="txn-dashboard__amount-overlay">
+									<span>BTC</span>
+									<span>Bitcoin</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="transfer__input">
+					<label for="amount" class="transfer__label">Available: <span>$4534</span></label>
+					<input id="amount" autocomplete="off" type="text" name="Amount" placeholder="Amount" class="input">
+				</div>
+				<div class="transfer__input">
+					<input autocomplete="off" type="number" name="code 2fa" placeholder="2 FA Code" class="input">
+				</div>
+				<button type="button" class="transfer__button button">Transfer</button>
+			</div>
+		</div>
+	</div>
+
+
+	<!--  -->
+
+
+
+	<div id="withdraw" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout transfer">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="transfer__title">Withdraw</div>
+				<p class="transfer__subtitle">Withdraw money to your wallet</p>
+				<div class="transfer__select select-transfer">
+					<div class="select-transfer__selected">
+						<div class="select-transfer__amn table-amount btc">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+					</div>
+					<div class="select-transfer__list">
+						<div class="select-transfer__amn table-amount ltc">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+						<div class="select-transfer__amn table-amount usdt">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+						<div class="select-transfer__amn table-amount bnb">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<select name="Chain Type">
+					<option value="1" selected>Chain Type</option>
+					<option value="2">Chain Type</option>
+					<option value="3">Chain Type</option>
+					<option value="4">Chain Type</option>
+				</select>
+				<div class="transfer__input">
+					<input autocomplete="off" type="text" name="Wallet Address" placeholder="Wallet Address" class="input">
+				</div>
+				<div class="transfer__input">
+					<label for="amount" class="transfer__label">Available: <a href="#">$4534</a></label>
+					<input id="amount" autocomplete="off" type="text" name="Amount" placeholder="Amount" class="input">
+				</div>
+				<div class="transfer__lead">
+					<div>Transaction fee <span>....................................................................................................................................................</span>
+						<p>1 BTC</p>
+					</div>
+					<div>I'm receive <span>....................................................................................................................................................</span>
+						<p>1 BTC</p>
+					</div>
+				</div>
+				<button type="button" class="transfer__button button">Withdraw</button>
+			</div>
+		</div>
+	</div>
+
+
+	<!--  -->
+
+
+	<div id="top-up" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout transfer">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="transfer__title">Top Up Order</div>
+				<p class="transfer__subtitle">Create top up order</p>
+				<div class="transfer__select select-transfer">
+					<div class="select-transfer__selected">
+						<div class="select-transfer__amn table-amount btc">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+					</div>
+					<div class="select-transfer__list">
+						<div class="select-transfer__amn table-amount ltc">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+						<div class="select-transfer__amn table-amount usdt">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+						<div class="select-transfer__amn table-amount bnb">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="transfer__input">
+					<input autocomplete="off" type="text" name="Wallet Address" placeholder="Wallet Address" class="input">
+				</div>
+				<button type="button" class="transfer__button button">Generate Order</button>
+			</div>
+		</div>
+	</div>
+
+	<!--  -->
+
+
+	<div id="top-up-order" aria-hidden="true" class="popup transfer">
+		<div class="popup__wrapper">
+			<div class="popup__content logout">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="transfer__title">Top Up Order</div>
+				<p class="transfer__subtitle">Create top up order</p>
+				<div class="transfer__select select-transfer">
+					<div class="select-transfer__selected">
+						<div class="select-transfer__amn table-amount btc">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+					</div>
+					<div class="select-transfer__list">
+						<div class="select-transfer__amn table-amount ltc">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+						<div class="select-transfer__amn table-amount usdt">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+						<div class="select-transfer__amn table-amount bnb">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="transfer__input">
+					<input autocomplete="off" type="text" name="amount" placeholder="Amount" class="input">
+				</div>
+				<div data-copy class="transfer__info">
+					<div class="transfer__info-title">Top Up Order</div>
+					<div class="transfer__info-subtitle">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+					<div data-copy-text class="transfer__info-cod">8vn35yn3847wy58734y5734u834m9y5vn3047</div>
+					<button data-copy-button type="button" class="transfer__info-copy _icon-copy">Copy</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--  -->
+
+
+	<div id="Confirm" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout transfer">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="transfer__title">Confirm transfer</div>
+				<p class="transfer__subtitle">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				<button type="button" class="transfer__button transfer__button-grey button">Confirm transfer in <span> 5 </span> sec...</button>
+			</div>
+		</div>
+	</div>
+
+	<!--  -->
+
+	<div id="Confirm_2" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout transfer">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="transfer__title">Confirm transfer</div>
+				<p class="transfer__subtitle">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				<button type="button" class="transfer__button button">Transfer</button>
+			</div>
+		</div>
+	</div>
+
+
+	<!--  -->
+
+	<div id="delete-transaction" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout">
+				<div class="logout__title">Delete transaction</div>
+				<p class="logout__subtitle">Are you sure you want to remove the tranzation?</p>
+				<div class="logout__row">
+					<button type="button" class="logout__cansel button" data-close>Cancel</button>
+					<button type="button" class="logout__log button">Confirm delete in 5 sec...</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--  -->
+
+	<div id="confirm-withdraw" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout transfer">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="transfer__title">Confirm</div>
+				<p class="transfer__subtitle">Confirm withdraw</p>
+				<div class="transfer__input">
+					<input autocomplete="off" type="text" name="Code" placeholder="2 FA Code" class="input">
+				</div>
+				<div class="transfer__lead">
+					<div>Currency<span>....................................................................................................................................................</span>
+						<p>Bitcoin</p>
+					</div>
+					<div>Network<span>....................................................................................................................................................</span>
+						<p>Bitcoin</p>
+					</div>
+					<div>Transaction fee <span>....................................................................................................................................................</span>
+						<p>1 BTC</p>
+					</div>
+					<div>I'm receive <span>....................................................................................................................................................</span>
+						<p>1 BTC</p>
+					</div>
+				</div>
+				<button type="button" class="transfer__button button">Withdraw</button>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--  -->
+
+	<div id="delete-transaction-autoconvert" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="logout__title logout__title-left">Delete transaction</div>
+				<p class="logout__subtitle logout__title-left">Are you sure you want to remove the tranzation?</p>
+				<div class="form-account__input">
+					<input autocomplete="off" type="number" name="2FACode" placeholder="2 FA Code" class="input">
+				</div>
+				<div class="logout__row">
+					<button type="button" class="logout__cansel button" data-close>Cancel</button>
+					<button type="button" class="logout__log button" data-close>Delete</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--  -->
+
+	<div id="filters" aria-hidden="true" class="popup filters">
+		<div class="popup__wrapper">
+			<div class="popup__content logout">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="logout__title logout__title-left">Filters</div>
+				<div class="filters__select">
+					<div class="filters__select-head">
+						<span>Currency</span>
+						<div class="filters__select-icon"></div>
+					</div>
+					<div class="filters__select-dropdown">
+						<div class="filters__select-item">Currency 2</div>
+						<div class="filters__select-item">Currency 3</div>
+						<div class="filters__select-item">Currency 4</div>
+					</div>
+				</div>
+				<div class="filters__select">
+					<div class="filters__select-head">
+						<span>Status</span>
+						<div class="filters__select-icon"></div>
+					</div>
+					<div class="filters__select-dropdown">
+						<div class="filters__select-item">Status 2</div>
+						<div class="filters__select-item">Status 3</div>
+						<div class="filters__select-item">Status 4</div>
+					</div>
+				</div>
+				<div class="filters__actions">
+					<button type="button" class="filters__reset">Reset Filter</button>
+					<button type="button" class="filters__apply">Apply Filter</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--  -->
+
+	<div id="email-send" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="logout__title logout__title-left">Leave your email</div>
+				<p class="logout__subtitle logout__title-left">When your payment status will change, we'll send to you notification</p>
+				<div class="form-account__input">
+					<input autocomplete="off" type="number" name="Email" placeholder="Email" class="input">
+				</div>
+				<button type="submit" class="logout__send">Send</button>
+			</div>
+		</div>
+	</div>
+
+	<!--  -->
+
+	<div id="success" aria-hidden="true" class="popup success">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="success__icon">
+					<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
+						<circle cx="27.5" cy="27.5" r="27.5" fill="#46DFC2" />
+						<path d="M24.5996 36.6666C24.0916 36.6666 23.6091 36.462 23.2535 36.1039L16.0661 28.8652C15.3295 28.1235 15.3295 26.8957 16.0661 26.1539C16.8026 25.4121 18.0217 25.4121 18.7582 26.1539L24.5996 32.037L37.6538 18.8896C38.3903 18.1479 39.6094 18.1479 40.3459 18.8896C41.0824 19.6314 41.0824 20.8592 40.3459 21.601L25.9456 36.1039C25.5901 36.462 25.1075 36.6666 24.5996 36.6666Z" fill="white" />
+					</svg>
+				</div>
+				<div class="success__label">Success</div>
+				<div class="success__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</div>
+				<button data-close type="button" class="success__close">Close</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
