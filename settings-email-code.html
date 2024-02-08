@@ -6,12 +6,12 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240204233604">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240208234657">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20240204233604"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20240208234657"></script>
 
 </head>
 
@@ -37,7 +37,10 @@
 							<a href="#" class="_icon-wallets">Wallets</a>
 						</li>
 						<li>
-							<a href="#" class="_icon-settings _active">Settings</a>
+							<a href="#" class="_icon-wallets _active">Payment Links</a>
+						</li>
+						<li>
+							<a href="#" class="_icon-settings">Settings</a>
 						</li>
 					</ul>
 				</nav>
@@ -92,7 +95,7 @@
 			</main>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240204233604"></script>
+	<script src="js/app.min.js?_v=20240208234657"></script>
 	<div id="log-out" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content logout">
@@ -605,6 +608,61 @@
 				<div class="success__label">Success</div>
 				<div class="success__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</div>
 				<button data-close type="button" class="success__close">Close</button>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Payment Link -->
+
+	<div id="payment-link" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content logout transfer payment-link">
+				<button type="button" class="logout__close" data-close></button>
+				<div class="transfer__title">Payment Link</div>
+				<p class="transfer__subtitle">Create payment link</p>
+				<div class="transfer__select select-transfer">
+					<div class="select-transfer__selected">
+						<div class="select-transfer__amn table-amount btc">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+					</div>
+					<div class="select-transfer__list">
+						<div class="select-transfer__amn table-amount ltc">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+						<div class="select-transfer__amn table-amount usdt">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+						<div class="select-transfer__amn table-amount bnb">
+							<div class="txn-dashboard__amount-overlay">
+								<span>BTC</span>
+								<span>Bitcoin</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="transfer__input">
+					<input autocomplete="off" type="text" name="Wallet Address" placeholder="Amount" class="input">
+					<span>USD</span>
+				</div>
+				<button type="button" class="transfer__button button">Create</button>
+				<div data-copy class="payment-link__generate">
+					<div class="payment-link__generate-title">Payment Link</div>
+					<div class="payment-link__generate-subtitle">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+					<div data-copy-text class="payment-link__generate-value">https://wise.life/api/web</div>
+					<button data-copy-button type="button" class="payment-link__generate-copy _icon-copy button">Copy</button>
+				</div>
 			</div>
 		</div>
 	</div>

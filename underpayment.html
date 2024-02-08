@@ -65,18 +65,28 @@
 						<button type="button" class="icon-menu"><span></span></button>
 					</div>
 				</header>
-				<section class="account">
+				<section class="account underpayment">
 					<div class="account__container">
 						<div class="account__edit">
 							<form action="#" class="account__form form-account">
 								<button type="button" class="form-account__close"></button>
-								<div class="form-account__title">Comission</div>
-								<div class="form-account__caption">Сomission settings</div>
-								<div class="form-account__checkbox">
-									<label for="comission-checkbox">Charge a commission to the user</label>
-									<input id="comission-checkbox" type="checkbox" class="form-account__checkbox-input">
+								<div class="form-account__title">Underpayment</div>
+								<div class="form-account__caption">Set your underpayment rent</div>
+								<div class="underpayment__row">
+									<div class="underpayment__input">
+										<input type="text" name="form[]" placeholder="Amount" class="input">
+									</div>
+									<div class="underpayment__select select-transfer">
+										<div class="select-transfer__selected underpayment__select-selected"><span>%</span>(Percent)</div>
+										<div class="select-transfer__list underpayment__select-list">
+											<div class="underpayment__select-item"><span>%</span>(Percent)</div>
+											<div class="underpayment__select-item"><span>Amount</span>(USD)</div>
+										</div>
+									</div>
 								</div>
-								<button type="button" class="form-account__submit button">Save</button>
+								<div class="underpayment__label">Duis aute irure</div>
+								<div class="underpayment__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+								<button class="underpayment__button button">Save</button>
 							</form>
 						</div>
 					</div>

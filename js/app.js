@@ -1345,41 +1345,39 @@
     window.addEventListener("load", updateAttributesAndClasses);
     window.addEventListener("resize", updateAttributesAndClasses);
     function updateSelectTransfer() {
-        const selectTransfer = document.querySelectorAll(".select-transfer");
-        if (selectTransfer) {
-            const changeButton = document.querySelector(".transfer__change");
-            for (let i = 0; i < selectTransfer.length; i++) {
-                const select = selectTransfer[i];
-                const selected = select.querySelector(".select-transfer__selected");
-                const list = select.querySelector(".select-transfer__list");
-                const amnItems = list.querySelectorAll(".select-transfer__amn");
-                _slideUp(list);
-                amnItems.forEach((item => {
-                    item.addEventListener("click", (function() {
-                        const clickedAmn = this.cloneNode(true);
-                        selected.innerHTML = "";
-                        selected.appendChild(clickedAmn);
-                        _slideUp(list);
-                        amnItems.forEach((otherItem => {
-                            if (otherItem !== item && otherItem.classList.contains("selected")) otherItem.classList.remove("selected");
-                        }));
-                        item.classList.toggle("selected");
-                    }));
-                }));
-                selected.addEventListener("click", (function() {
-                    _slideToggle(list);
+        const selectTransfers = document.querySelectorAll("[data-multiselect]");
+        if (selectTransfers) selectTransfers.forEach((select => {
+            const selected = select.querySelector(".select-transfer__selected");
+            const list = select.querySelector(".select-transfer__list");
+            const amnItems = list.querySelectorAll(".select-transfer__amn");
+            _slideUp(list, 0);
+            const selectedItems = [];
+            function updateSelectedItems() {
+                selected.innerHTML = "";
+                selectedItems.forEach((item => {
+                    selected.appendChild(item.cloneNode(true));
                 }));
             }
-            if (changeButton) changeButton.addEventListener("click", (function() {
-                changeButton.classList.toggle("_act");
-                const content1 = selectTransfer[0].querySelector(".select-transfer__amn").cloneNode(true);
-                const content2 = selectTransfer[1].querySelector(".select-transfer__amn").cloneNode(true);
-                selectTransfer[0].querySelector(".select-transfer__selected").innerHTML = "";
-                selectTransfer[0].querySelector(".select-transfer__selected").appendChild(content2);
-                selectTransfer[1].querySelector(".select-transfer__selected").innerHTML = "";
-                selectTransfer[1].querySelector(".select-transfer__selected").appendChild(content1);
+            amnItems.forEach((item => {
+                item.addEventListener("click", (() => {
+                    const isItemSelected = selectedItems.includes(item);
+                    if (isItemSelected) {
+                        const index = selectedItems.indexOf(item);
+                        if (index !== -1) {
+                            selectedItems.splice(index, 1);
+                            item.classList.remove("selected");
+                        }
+                    } else if (selectedItems.length < 3) {
+                        selectedItems.push(item);
+                        item.classList.add("selected");
+                    }
+                    updateSelectedItems();
+                }));
             }));
-        }
+            selected.addEventListener("click", (() => {
+                _slideToggle(list);
+            }));
+        }));
     }
     updateSelectTransfer();
     function copyButtonsInit() {
@@ -1521,6 +1519,15 @@
         more.addEventListener("click", (function() {
             block.classList.toggle("_active");
             _slideToggle(details, 300);
+        }));
+    }
+    const autoconvertBody = document.querySelectorAll(".table-autoconvert__body");
+    for (let i = 0; i < autoconvertBody.length; i++) {
+        const body = autoconvertBody[i];
+        const autoconvertButton = body.querySelector(".table-autoconvert__select");
+        autoconvertButton.addEventListener("click", (function() {
+            this.classList.toggle("selected");
+            if (autoconvertButton.classList.contains("selected")) document.querySelector(".table-autoconvert__select span").textContent = "Selected"; else document.querySelector(".table-autoconvert__select span").textContent = "Select";
         }));
     }
     window["FLS"] = false;

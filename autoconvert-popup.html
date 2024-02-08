@@ -70,13 +70,51 @@
 						<div class="account__edit">
 							<form action="#" class="account__form form-account">
 								<button type="button" class="form-account__close"></button>
-								<div class="form-account__title">Comission</div>
-								<div class="form-account__caption">Сomission settings</div>
-								<div class="form-account__checkbox">
-									<label for="comission-checkbox">Charge a commission to the user</label>
-									<input id="comission-checkbox" type="checkbox" class="form-account__checkbox-input">
+								<div class="form-account__title">Autoconvert to USDT</div>
+								<div class="form-account__caption">Select the currency for conversion</div>
+								<div data-multiselect class="transfer__select select-transfer">
+									<div class="select-transfer__selected">
+										<div class="select-transfer__amn table-amount btc">
+											<div class="txn-dashboard__amount-overlay">
+												<span>BTC</span>
+												<span>Bitcoin</span>
+											</div>
+										</div>
+									</div>
+									<div class="select-transfer__list">
+										<div data-item="btc" class="select-transfer__amn table-amount btc">
+											<div class="txn-dashboard__amount-overlay">
+												<span>BTC</span>
+												<span>Bitcoin</span>
+											</div>
+										</div>
+										<div data-item="ltc" class="select-transfer__amn table-amount ltc">
+											<div class="txn-dashboard__amount-overlay">
+												<span>BTC</span>
+												<span>Bitcoin</span>
+											</div>
+										</div>
+										<div data-item="usdt" class="select-transfer__amn table-amount usdt">
+											<div class="txn-dashboard__amount-overlay">
+												<span>BTC</span>
+												<span>Bitcoin</span>
+											</div>
+										</div>
+										<div data-item="bnb" class="select-transfer__amn table-amount bnb">
+											<div class="txn-dashboard__amount-overlay">
+												<span>BTC</span>
+												<span>Bitcoin</span>
+											</div>
+										</div>
+									</div>
 								</div>
-								<button type="button" class="form-account__submit button">Save</button>
+								<div class="form-account__input">
+									<input autocomplete="off" type="number" name="2FACode" placeholder="2 FA Code" class="input">
+								</div>
+								<div class="logout__row">
+									<button type="button" class="logout__cansel button">Cancel</button>
+									<button type="button" class="logout__cansel button">Activate</button>
+								</div>
 							</form>
 						</div>
 					</div>

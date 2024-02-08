@@ -48,36 +48,144 @@
 				<a href="#" class="sidebar__support">Support</a>
 			</aside>
 			<main class="main">
-				<header class="header">
-					<div class="header__container">
-						<div class="header__user user-header">
-							<img src="img/avatar.svg" alt="Avatar" width="43" height="43">
-							<span>Product Name</span>
-							<div class="user-header__dropdown dropdown-user">
-								<div class="dropdown-user__info">
-									<img src="img/avatar.svg" alt="Avatar" width="73" height="73">
-									<span>Product Name</span>
+				<section class="autoconvert">
+					<header class="header">
+						<div class="header__container">
+							<div class="header__info info-header">
+								<h1 class="info-header__title">undefined</h1>
+								<time datetime="2023-03-27">March 27th, 2023</time>
+							</div>
+							<div class="header__user user-header">
+								<img src="img/avatar.svg" alt="Avatar" width="43" height="43">
+								<span>Product Name</span>
+								<div class="user-header__dropdown dropdown-user">
+									<div class="dropdown-user__info">
+										<img src="img/avatar.svg" alt="Avatar" width="73" height="73">
+										<span>Product Name</span>
+									</div>
+									<hr>
+									<a data-popup="#log-out" data-da=".sidebar, 991.98" href="#" class="dropdown-user__logout _icon-logout">Log out</a>
 								</div>
-								<hr>
-								<a data-popup="#log-out" data-da=".sidebar, 991.98" href="#" class="dropdown-user__logout _icon-logout">Log out</a>
+							</div>
+							<button type="button" class="icon-menu"><span></span></button>
+						</div>
+					</header>
+					<div class="autoconvert__container">
+						<div class="autoconvert__header header-autoconvert">
+							<div class="header-autoconvert__column">
+								<h1 class="header-autoconvert__title">Autoconvert</h1>
+								<div class="header-autoconvert__subtitle">Select currencies to be converted to USDT</div>
+							</div>
+							<div class="header-autoconvert__actions">
+								<button type="button" class="header-autoconvert__button header-autoconvert__button_disable button">Disable</button>
+								<button type="button" class="header-autoconvert__button header-autoconvert__button_save button">Save</button>
 							</div>
 						</div>
-						<button type="button" class="icon-menu"><span></span></button>
-					</div>
-				</header>
-				<section class="account">
-					<div class="account__container">
-						<div class="account__edit">
-							<form action="#" class="account__form form-account">
-								<button type="button" class="form-account__close"></button>
-								<div class="form-account__title">Comission</div>
-								<div class="form-account__caption">Сomission settings</div>
-								<div class="form-account__checkbox">
-									<label for="comission-checkbox">Charge a commission to the user</label>
-									<input id="comission-checkbox" type="checkbox" class="form-account__checkbox-input">
-								</div>
-								<button type="button" class="form-account__submit button">Save</button>
-							</form>
+						<div class="autoconvert__body">
+							<table class="autoconvert__table table-autoconvert">
+								<tr class="table-autoconvert__header">
+									<th>Currency</th>
+									<th>Allocation</th>
+									<th>Amount</th>
+									<th class="table-autoconvert__header-item-last">Autoconvert</th>
+								</tr>
+								<tr class="table-autoconvert__body">
+									<td class="table-autoconvert__column-currency">
+										<div class="table-autoconvert__currency table-amount btc">
+											<div class="txn-dashboard__amount-overlay">
+												<span>BTC</span>
+												<span>Bitcoin</span>
+											</div>
+										</div>
+									</td>
+									<td class="table-autoconvert__column-allocation">
+										<div class="table-autoconvert__allocation">25%</div>
+									</td>
+									<td class="table-autoconvert__column-amount">
+										<div class="table-autoconvert__data">
+											<div class="table-autoconvert__data-value">12</div>
+											<div class="table-autoconvert__data-price">$32523</div>
+										</div>
+									</td>
+									<td class="table-autoconvert__column-autoconvert">
+										<button type="button" class="table-autoconvert__select button">
+											<span>Select</span>
+										</button>
+									</td>
+								</tr>
+								<tr class="table-autoconvert__body">
+									<td class="table-autoconvert__column-currency">
+										<div class="table-autoconvert__currency table-amount btc">
+											<div class="txn-dashboard__amount-overlay">
+												<span>BTC</span>
+												<span>Bitcoin</span>
+											</div>
+										</div>
+									</td>
+									<td class="table-autoconvert__column-allocation">
+										<div class="table-autoconvert__allocation">25%</div>
+									</td>
+									<td class="table-autoconvert__column-amount">
+										<div class="table-autoconvert__data">
+											<div class="table-autoconvert__data-value">12</div>
+											<div class="table-autoconvert__data-price">$32523</div>
+										</div>
+									</td>
+									<td class="table-autoconvert__column-autoconvert">
+										<button type="button" class="table-autoconvert__select button">
+											<span>Select</span>
+										</button>
+									</td>
+								</tr>
+								<tr class="table-autoconvert__body">
+									<td class="table-autoconvert__column-currency">
+										<div class="table-autoconvert__currency table-amount btc">
+											<div class="txn-dashboard__amount-overlay">
+												<span>BTC</span>
+												<span>Bitcoin</span>
+											</div>
+										</div>
+									</td>
+									<td class="table-autoconvert__column-allocation">
+										<div class="table-autoconvert__allocation">25%</div>
+									</td>
+									<td class="table-autoconvert__column-amount">
+										<div class="table-autoconvert__data">
+											<div class="table-autoconvert__data-value">12</div>
+											<div class="table-autoconvert__data-price">$32523</div>
+										</div>
+									</td>
+									<td class="table-autoconvert__column-autoconvert">
+										<button type="button" class="table-autoconvert__select button">
+											<span>Select</span>
+										</button>
+									</td>
+								</tr>
+								<tr class="table-autoconvert__body">
+									<td class="table-autoconvert__column-currency">
+										<div class="table-autoconvert__currency table-amount btc">
+											<div class="txn-dashboard__amount-overlay">
+												<span>BTC</span>
+												<span>Bitcoin</span>
+											</div>
+										</div>
+									</td>
+									<td class="table-autoconvert__column-allocation">
+										<div class="table-autoconvert__allocation">25%</div>
+									</td>
+									<td class="table-autoconvert__column-amount">
+										<div class="table-autoconvert__data">
+											<div class="table-autoconvert__data-value">12</div>
+											<div class="table-autoconvert__data-price">$32523</div>
+										</div>
+									</td>
+									<td class="table-autoconvert__column-autoconvert">
+										<button type="button" class="table-autoconvert__select button">
+											<span>Select</span>
+										</button>
+									</td>
+								</tr>
+							</table>
 						</div>
 					</div>
 				</section>

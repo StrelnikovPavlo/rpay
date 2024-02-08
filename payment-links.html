@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Transactions</title>
+	<title>Payment Links</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -51,7 +51,7 @@
 				<header class="header">
 					<div class="header__container">
 						<div class="header__info info-header">
-							<h1 class="info-header__title">Transactions</h1>
+							<h1 class="info-header__title">Payment Links</h1>
 							<time datetime="2023-03-27">March 27th, 2023</time>
 						</div>
 						<div class="header__user user-header">
@@ -69,8 +69,8 @@
 						<button type="button" class="icon-menu"><span></span></button>
 					</div>
 				</header>
-				<section class="transactions">
-					<div class="transactions__container">
+				<section class="payment-links">
+					<div data-tabs class="payment-links__container">
 						<div class="transactions__header header-transactions">
 							<div class="header-transactions__row">
 								<div class="header-transactions__label">Transactions</div>
@@ -87,436 +87,357 @@
 								</div>
 							</div>
 							<div class="header-transactions__column">
-								<a data-da=".header-transactions__row, 767" href="#" download class="header-transactions__download"></a>
-								<div class="header-transactions__nav header-transactions__nav-5">
-									<a href="#" class="header-transactions__nav-item">All</a>
-									<a href="#" class="header-transactions__nav-item">Transfer</a>
-									<a href="#" class="header-transactions__nav-item header-transactions__nav-item_active">Payments</a>
-									<a href="#" class="header-transactions__nav-item">Withdraws</a>
-									<a href="#" class="header-transactions__nav-item">Commissions</a>
+								<a data-popup="#payment-link" data-da=".transactions__header, 767" href="#" class="header-transactions__create">Create</a>
+								<div data-tabs-titles class="header-transactions__nav header-transactions__nav-3">
+									<a data-tabs-title href="#" class="header-transactions__nav-item">Pending</a>
+									<a data-tabs-title href="#" class="header-transactions__nav-item">Completed</a>
+									<a data-tabs-title href="#" class="header-transactions__nav-item _tab-active">Expired</a>
 								</div>
 							</div>
 						</div>
-						<div class="transactions__body">
-							<div class="transactions__body-desktop">
-								<div class="transactions__table table-transactions">
-									<div class="table-transactions__header">
-										<div class="table-transactions__header-row">
-											<div class="table-transactions__header-item">Currency</div>
-											<div class="table-transactions__header-item">Date</div>
-											<div class="table-transactions__header-item">Type</div>
-											<div class="table-transactions__header-item">Status</div>
-											<div class="table-transactions__header-item">Amount</div>
-											<div class="table-transactions__header-item">Fee</div>
-											<div class="table-transactions__header-item">User info</div>
-											<div class="table-transactions__header-item">Wallet</div>
-										</div>
-										<div class="table-transactions__header-item">Action</div>
-									</div>
-									<div class="table-transactions__body">
-										<div class="table-transactions__block block-table">
-											<div class="block-table__main">
-												<div class="block-table__row">
-													<div class="block-table__currency table-amount btc">
-														<div class="txn-dashboard__amount-overlay">
-															<span>BTC</span>
-															<span>Bitcoin</span>
-														</div>
-													</div>
-													<div class="block-table__date">
-														<div class="block-table__date-value">01.01.2023</div>
-														<div class="block-table__date-time">14:20</div>
-													</div>
-													<div class="block-table__type block-table__label">Deposit</div>
-													<div class="block-table__status _complete">Expired</div>
-													<div class="block-table__amount">
-														<div class="block-table__amount-value">12</div>
-														<div class="block-table__amount-sum">$32523</div>
-													</div>
-													<div class="block-table__free block-table__label">25 USDT</div>
-													<div class="block-table__wallet block-table__label">hfksu5jhf67ikmf739ksnhfk37jfngjd</div>
-													<div class="block-table__wallet block-table__label">hfksu5jhf67ikmf739ksnhfk37jfngjd</div>
-												</div>
-												<button type="button" class="block-table__more"></button>
+						<div data-tabs-body class="payment-links__body">
+							<div data-tabs-item class="payment-links__block">
+								<table class="payment-links__table pending-table">
+									<tr class="payment-links__table-header">
+										<th>Amount</th>
+										<th>Link</th>
+										<th>Date</th>
+										<th>Status</th>
+										<th>Time Limit</th>
+										<th>Remaining time</th>
+									</tr>
+									<tr class="payment-links__table-inner">
+										<td class="pending-table__column-sum">
+											<div class="payment-links__table-label">Amount</div>
+											<div class="payment-links__table-sum">$200 USD</div>
+										</td>
+										<td class="pending-table__column-link">
+											<div class="payment-links__table-label">Link</div>
+											<div data-copy class="payment-links__table-row">
+												<a data-copy-text href="#" class="payment-links__table-link">https://wise.life/api/web</a>
+												<button data-copy-button class="payment-links__table-copy _icon-copy"></button>
 											</div>
-											<div class="block-table__details details-table">
-												<div class="details-table__caption">Transaction Details</div>
-												<div class="details-table__row">
-													<div class="details-table__content">
-														<div data-copy class="details-table__column">
-															<div class="details-table__label">TXID <button data-copy-button="" class="details-table__btn-copy _icon-copy"></button></div>
-															<div data-copy-text class="details-table__value">hfksu5jhf67ikmf739ksnhfk37jfngjd</div>
-														</div>
-														<div class="details-table__column">
-															<div class="details-table__label">Sender's wallet</div>
-															<div class="details-table__value">hfksu5jhf67ikmf739ksnhfk37jfngjd</div>
-														</div>
-														<div class="details-table__column">
-															<div class="details-table__label">Created from</div>
-															<div class="details-table__value">API</div>
-														</div>
-													</div>
-													<div class="details-table__actions">
-														<button data-popup="#delete-transaction" type="button" class="details-table__delete _icon-delete"><span>Delete</span></button>
-														<button data-popup="#delete-transaction-autoconvert" type="button" class="details-table__button">Refresh</button>
-														<button type="button" class="details-table__button">Details</button>
-													</div>
-												</div>
+										</td>
+										<td class="pending-table__column-date">
+											<div class="payment-links__table-label">Date</div>
+											<div class="payment-links__table-data">
+												<div class="payment-links__table-date">01.01.2023</div>
+												<div class="payment-links__table-time">14:20</div>
 											</div>
-										</div>
-										<div class="table-transactions__block block-table">
-											<div class="block-table__main">
-												<div class="block-table__row">
-													<div class="block-table__currency table-amount btc">
-														<div class="txn-dashboard__amount-overlay">
-															<span>BTC</span>
-															<span>Bitcoin</span>
-														</div>
-													</div>
-													<div class="block-table__date">
-														<div class="block-table__date-value">01.01.2023</div>
-														<div class="block-table__date-time">14:20</div>
-													</div>
-													<div class="block-table__type block-table__label">Deposit</div>
-													<div class="block-table__status _complete">Expired</div>
-													<div class="block-table__amount">
-														<div class="block-table__amount-value">12</div>
-														<div class="block-table__amount-sum">$32523</div>
-													</div>
-													<div class="block-table__free block-table__label">25 USDT</div>
-													<div class="block-table__wallet block-table__label">hfksu5jhf67ikmf739ksnhfk37jfngjd</div>
-													<div class="block-table__wallet block-table__label">hfksu5jhf67ikmf739ksnhfk37jfngjd</div>
-												</div>
-												<button type="button" class="block-table__more"></button>
+										</td>
+										<td class="pending-table__column-status">
+											<div class="payment-links__table-label">Status</div>
+											<div class="payment-links__table-status pending">Pending</div>
+										</td>
+										<td class="pending-table__column-time-limit">
+											<div class="payment-links__table-label">Time Limit</div>
+											<div class="payment-links__table-time-limit">01:00:00</div>
+										</td>
+										<td class="pending-table__column-remaining-time">
+											<div class="payment-links__table-label">Remaining time</div>
+											<div class="payment-links__table-remaining-time">00:55:32</div>
+										</td>
+									</tr>
+									<tr class="payment-links__table-inner">
+										<td class="pending-table__column-sum">
+											<div class="payment-links__table-label">Amount</div>
+											<div class="payment-links__table-sum">$200 USD</div>
+										</td>
+										<td class="pending-table__column-link">
+											<div class="payment-links__table-label">Link</div>
+											<div data-copy class="payment-links__table-row">
+												<a data-copy-text href="#" class="payment-links__table-link">https://wise.life/api/web</a>
+												<button data-copy-button class="payment-links__table-copy _icon-copy"></button>
 											</div>
-											<div class="block-table__details details-table">
-												<div class="details-table__caption">Transaction Details</div>
-												<div class="details-table__row">
-													<div class="details-table__content">
-														<div data-copy class="details-table__column">
-															<div class="details-table__label">TXID <button data-copy-button="" class="details-table__btn-copy _icon-copy"></button></div>
-															<div data-copy-text class="details-table__value">hfksu5jhf67ikmf739ksnhfk37jfngjd</div>
-														</div>
-														<div class="details-table__column">
-															<div class="details-table__label">Sender's wallet</div>
-															<div class="details-table__value">hfksu5jhf67ikmf739ksnhfk37jfngjd</div>
-														</div>
-														<div class="details-table__column">
-															<div class="details-table__label">Created from</div>
-															<div class="details-table__value">API</div>
-														</div>
-													</div>
-													<div class="details-table__actions">
-														<button data-popup="#delete-transaction" type="button" class="details-table__delete _icon-delete"><span>Delete</span></button>
-														<button data-popup="#delete-transaction-autoconvert" type="button" class="details-table__button">Refresh</button>
-														<button type="button" class="details-table__button">Details</button>
-													</div>
-												</div>
+										</td>
+										<td class="pending-table__column-date">
+											<div class="payment-links__table-label">Date</div>
+											<div class="payment-links__table-data">
+												<div class="payment-links__table-date">01.01.2023</div>
+												<div class="payment-links__table-time">14:20</div>
 											</div>
-										</div>
-										<div class="table-transactions__block block-table">
-											<div class="block-table__main">
-												<div class="block-table__row">
-													<div class="block-table__currency table-amount btc">
-														<div class="txn-dashboard__amount-overlay">
-															<span>BTC</span>
-															<span>Bitcoin</span>
-														</div>
-													</div>
-													<div class="block-table__date">
-														<div class="block-table__date-value">01.01.2023</div>
-														<div class="block-table__date-time">14:20</div>
-													</div>
-													<div class="block-table__type block-table__label">Deposit</div>
-													<div class="block-table__status _complete">Expired</div>
-													<div class="block-table__amount">
-														<div class="block-table__amount-value">12</div>
-														<div class="block-table__amount-sum">$32523</div>
-													</div>
-													<div class="block-table__free block-table__label">25 USDT</div>
-													<div class="block-table__wallet block-table__label">hfksu5jhf67ikmf739ksnhfk37jfngjd</div>
-													<div class="block-table__wallet block-table__label">hfksu5jhf67ikmf739ksnhfk37jfngjd</div>
-												</div>
-												<button type="button" class="block-table__more"></button>
+										</td>
+										<td class="pending-table__column-status">
+											<div class="payment-links__table-label">Status</div>
+											<div class="payment-links__table-status pending">Pending</div>
+										</td>
+										<td class="pending-table__column-time-limit">
+											<div class="payment-links__table-label">Time Limit</div>
+											<div class="payment-links__table-time-limit">01:00:00</div>
+										</td>
+										<td class="pending-table__column-remaining-time">
+											<div class="payment-links__table-label">Remaining time</div>
+											<div class="payment-links__table-remaining-time">00:55:32</div>
+										</td>
+									</tr>
+									<tr class="payment-links__table-inner">
+										<td class="pending-table__column-sum">
+											<div class="payment-links__table-label">Amount</div>
+											<div class="payment-links__table-sum">$200 USD</div>
+										</td>
+										<td class="pending-table__column-link">
+											<div class="payment-links__table-label">Link</div>
+											<div data-copy class="payment-links__table-row">
+												<a data-copy-text href="#" class="payment-links__table-link">https://wise.life/api/web</a>
+												<button data-copy-button class="payment-links__table-copy _icon-copy"></button>
 											</div>
-											<div class="block-table__details details-table">
-												<div class="details-table__caption">Transaction Details</div>
-												<div class="details-table__row">
-													<div class="details-table__content">
-														<div data-copy class="details-table__column">
-															<div class="details-table__label">TXID <button data-copy-button="" class="details-table__btn-copy _icon-copy"></button></div>
-															<div data-copy-text class="details-table__value">hfksu5jhf67ikmf739ksnhfk37jfngjd</div>
-														</div>
-														<div class="details-table__column">
-															<div class="details-table__label">Sender's wallet</div>
-															<div class="details-table__value">hfksu5jhf67ikmf739ksnhfk37jfngjd</div>
-														</div>
-														<div class="details-table__column">
-															<div class="details-table__label">Created from</div>
-															<div class="details-table__value">API</div>
-														</div>
-													</div>
-													<div class="details-table__actions">
-														<button data-popup="#delete-transaction" type="button" class="details-table__delete _icon-delete"><span>Delete</span></button>
-														<button data-popup="#delete-transaction-autoconvert" type="button" class="details-table__button">Refresh</button>
-														<button type="button" class="details-table__button">Details</button>
-													</div>
-												</div>
+										</td>
+										<td class="pending-table__column-date">
+											<div class="payment-links__table-label">Date</div>
+											<div class="payment-links__table-data">
+												<div class="payment-links__table-date">01.01.2023</div>
+												<div class="payment-links__table-time">14:20</div>
 											</div>
-										</div>
-									</div>
-								</div>
+										</td>
+										<td class="pending-table__column-status">
+											<div class="payment-links__table-label">Status</div>
+											<div class="payment-links__table-status pending">Pending</div>
+										</td>
+										<td class="pending-table__column-time-limit">
+											<div class="payment-links__table-label">Time Limit</div>
+											<div class="payment-links__table-time-limit">01:00:00</div>
+										</td>
+										<td class="pending-table__column-remaining-time">
+											<div class="payment-links__table-label">Remaining time</div>
+											<div class="payment-links__table-remaining-time">00:55:32</div>
+										</td>
+									</tr>
+								</table>
 							</div>
-							<div class="transactions__body-mobile">
-								<div class="mobile-table__block">
-									<div class="mobile-table__main">
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Currency</div>
-											<div class="mobile-table__value">BTC</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Date & Time</div>
-											<div class="mobile-table__date">
-												<div class="mobile-table__date-value">10.09.2023</div>
-												<div class="mobile-table__date-time">11:56:30</div>
+							<div data-tabs-item class="payment-links__block">
+								<table class="payment-links__table completed-table">
+									<tr class="payment-links__table-header">
+										<th>Currency</th>
+										<th>Amount</th>
+										<th>Network</th>
+										<th>Date</th>
+										<th>Status</th>
+										<th>Fee</th>
+										<th>User info</th>
+										<th>Wallet</th>
+									</tr>
+									<tr class="payment-links__table-inner">
+										<td class="completed-table__column-currency">
+											<div class="payment-links__table-label">Currency</div>
+											<div class="payment-links__table-currency table-amount btc">
+												<div class="txn-dashboard__amount-overlay">
+													<span>BTC</span>
+													<span>Bitcoin</span>
+												</div>
 											</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Type</div>
-											<div class="mobile-table__value">Deposit</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Status</div>
-											<div class="block-table__status _complete">Expired</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Amount</div>
-											<div class="block-table__amount">
-												<div class="block-table__amount-value">12</div>
-												<div class="block-table__amount-sum">$32523</div>
+										</td>
+										<td class="completed-table__column-amount">
+											<div class="payment-links__table-label">Amount</div>
+											<div class="payment-links__table-amount">
+												<div class="payment-links__table-amount-value">12</div>
+												<div class="payment-links__table-amount-price">$32523</div>
 											</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Recieved amount</div>
-											<div class="mobile-table__value">$34 000</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Fee</div>
-											<div class="mobile-table__value">25 USDT</div>
-										</div>
-									</div>
-									<div class="mobile-table__details">
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">User Info</div>
-											<div class="mobile-table__wallet">example@gmail.con</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Wallet</div>
-											<div class="mobile-table__wallet">hfksu5jhf67ikmf739ksnhfk37jfngjd</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">TXID</div>
-											<div data-copy class="block-table__txid">
-												<div data-copy-text class="block-table__cod">...dsughiap</div>
-												<button data-copy-button type="button" class="block-table__copy _icon-copy">
-													<span>Copy</span>
-												</button>
+										</td>
+										<td class="completed-table__column-network">
+											<div class="payment-links__table-label">Network</div>
+											<div class="payment-links__table-network">BTC</div>
+										</td>
+										<td class="completed-table__column-date">
+											<div class="payment-links__table-label">Date</div>
+											<div class="payment-links__table-data">
+												<div class="payment-links__table-date">01.01.2023</div>
+												<div class="payment-links__table-time">14:20</div>
 											</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Sender's wallet</div>
-											<div class="mobile-table__wallet">hfksu5jhf67ikmf739ksnhfk37jfngjd</div>
-										</div>
-										<div class="mobile-table__row mobile-table__row_last">
-											<div class="mobile-table__label">Created from</div>
-											<div class="mobile-table__wallet">API</div>
-										</div>
-										<div class="mobile-table__actions">
-											<button type="button" class="details-table__delete _icon-delete"><span>Accept</span></button>
-											<button type="button" class="details-table__button">Decline</button>
-											<button type="button" class="details-table__button details-table__button-details">Details</button>
-										</div>
-									</div>
-									<button type="button" class="mobile-table__show-more">
-										Show Details
-										<span></span>
-									</button>
-								</div>
-								<div class="mobile-table__block">
-									<div class="mobile-table__main">
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Currency</div>
-											<div class="mobile-table__value">BTC</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Date & Time</div>
-											<div class="mobile-table__date">
-												<div class="mobile-table__date-value">10.09.2023</div>
-												<div class="mobile-table__date-time">11:56:30</div>
+										</td>
+										<td class="completed-table__column-status">
+											<div class="payment-links__table-label">Status</div>
+											<div class="payment-links__table-status completed">Completed</div>
+										</td>
+										<td class="completed-table__column-time-fee">
+											<div class="payment-links__table-label">Fee</div>
+											<div class="payment-links__table-fee">25 USDT</div>
+										</td>
+										<td class="completed-table__column-user-info">
+											<div class="payment-links__table-label">User info</div>
+											<div class="payment-links__table-user-info">example@gmail.com</div>
+										</td>
+										<td class="completed-table__column-wallet">
+											<div class="payment-links__table-label">Wallet</div>
+											<div class="payment-links__table-wallet">hfksu5jhf67ikmf739ksnhfk37jfngjd</div>
+										</td>
+									</tr>
+									<tr class="payment-links__table-inner">
+										<td class="completed-table__column-currency">
+											<div class="payment-links__table-label">Currency</div>
+											<div class="payment-links__table-currency table-amount btc">
+												<div class="txn-dashboard__amount-overlay">
+													<span>BTC</span>
+													<span>Bitcoin</span>
+												</div>
 											</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Type</div>
-											<div class="mobile-table__value">Deposit</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Status</div>
-											<div class="block-table__status _complete">Expired</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Amount</div>
-											<div class="block-table__amount">
-												<div class="block-table__amount-value">12</div>
-												<div class="block-table__amount-sum">$32523</div>
+										</td>
+										<td class="completed-table__column-amount">
+											<div class="payment-links__table-label">Amount</div>
+											<div class="payment-links__table-amount">
+												<div class="payment-links__table-amount-value">12</div>
+												<div class="payment-links__table-amount-price">$32523</div>
 											</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Recieved amount</div>
-											<div class="mobile-table__value">$34 000</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Fee</div>
-											<div class="mobile-table__value">25 USDT</div>
-										</div>
-									</div>
-									<div class="mobile-table__details">
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">User Info</div>
-											<div class="mobile-table__wallet">example@gmail.con</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Wallet</div>
-											<div class="mobile-table__wallet">hfksu5jhf67ikmf739ksnhfk37jfngjd</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">TXID</div>
-											<div data-copy class="block-table__txid">
-												<div data-copy-text class="block-table__cod">...dsughiap</div>
-												<button data-copy-button type="button" class="block-table__copy _icon-copy">
-													<span>Copy</span>
-												</button>
+										</td>
+										<td class="completed-table__column-network">
+											<div class="payment-links__table-label">Network</div>
+											<div class="payment-links__table-network">BTC</div>
+										</td>
+										<td class="completed-table__column-date">
+											<div class="payment-links__table-label">Date</div>
+											<div class="payment-links__table-data">
+												<div class="payment-links__table-date">01.01.2023</div>
+												<div class="payment-links__table-time">14:20</div>
 											</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Sender's wallet</div>
-											<div class="mobile-table__wallet">hfksu5jhf67ikmf739ksnhfk37jfngjd</div>
-										</div>
-										<div class="mobile-table__row mobile-table__row_last">
-											<div class="mobile-table__label">Created from</div>
-											<div class="mobile-table__wallet">API</div>
-										</div>
-										<div class="mobile-table__actions">
-											<button type="button" class="details-table__delete _icon-delete"><span>Accept</span></button>
-											<button type="button" class="details-table__button">Decline</button>
-											<button type="button" class="details-table__button details-table__button-details">Details</button>
-										</div>
-									</div>
-									<button type="button" class="mobile-table__show-more">
-										Show Details
-										<span></span>
-									</button>
-								</div>
-								<div class="mobile-table__block">
-									<div class="mobile-table__main">
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Currency</div>
-											<div class="mobile-table__value">BTC</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Date & Time</div>
-											<div class="mobile-table__date">
-												<div class="mobile-table__date-value">10.09.2023</div>
-												<div class="mobile-table__date-time">11:56:30</div>
+										</td>
+										<td class="completed-table__column-status">
+											<div class="payment-links__table-label">Status</div>
+											<div class="payment-links__table-status completed">Completed</div>
+										</td>
+										<td class="completed-table__column-time-fee">
+											<div class="payment-links__table-label">Fee</div>
+											<div class="payment-links__table-fee">25 USDT</div>
+										</td>
+										<td class="completed-table__column-user-info">
+											<div class="payment-links__table-label">User info</div>
+											<div class="payment-links__table-user-info">example@gmail.com</div>
+										</td>
+										<td class="completed-table__column-wallet">
+											<div class="payment-links__table-label">Wallet</div>
+											<div class="payment-links__table-wallet">hfksu5jhf67ikmf739ksnhfk37jfngjd</div>
+										</td>
+									</tr>
+									<tr class="payment-links__table-inner">
+										<td class="completed-table__column-currency">
+											<div class="payment-links__table-label">Currency</div>
+											<div class="payment-links__table-currency table-amount btc">
+												<div class="txn-dashboard__amount-overlay">
+													<span>BTC</span>
+													<span>Bitcoin</span>
+												</div>
 											</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Type</div>
-											<div class="mobile-table__value">Deposit</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Status</div>
-											<div class="block-table__status _complete">Expired</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Amount</div>
-											<div class="block-table__amount">
-												<div class="block-table__amount-value">12</div>
-												<div class="block-table__amount-sum">$32523</div>
+										</td>
+										<td class="completed-table__column-amount">
+											<div class="payment-links__table-label">Amount</div>
+											<div class="payment-links__table-amount">
+												<div class="payment-links__table-amount-value">12</div>
+												<div class="payment-links__table-amount-price">$32523</div>
 											</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Recieved amount</div>
-											<div class="mobile-table__value">$34 000</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Fee</div>
-											<div class="mobile-table__value">25 USDT</div>
-										</div>
-									</div>
-									<div class="mobile-table__details">
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">User Info</div>
-											<div class="mobile-table__wallet">example@gmail.con</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Wallet</div>
-											<div class="mobile-table__wallet">hfksu5jhf67ikmf739ksnhfk37jfngjd</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">TXID</div>
-											<div data-copy class="block-table__txid">
-												<div data-copy-text class="block-table__cod">...dsughiap</div>
-												<button data-copy-button type="button" class="block-table__copy _icon-copy">
-													<span>Copy</span>
-												</button>
+										</td>
+										<td class="completed-table__column-network">
+											<div class="payment-links__table-label">Network</div>
+											<div class="payment-links__table-network">BTC</div>
+										</td>
+										<td class="completed-table__column-date">
+											<div class="payment-links__table-label">Date</div>
+											<div class="payment-links__table-data">
+												<div class="payment-links__table-date">01.01.2023</div>
+												<div class="payment-links__table-time">14:20</div>
 											</div>
-										</div>
-										<div class="mobile-table__row">
-											<div class="mobile-table__label">Sender's wallet</div>
-											<div class="mobile-table__wallet">hfksu5jhf67ikmf739ksnhfk37jfngjd</div>
-										</div>
-										<div class="mobile-table__row mobile-table__row_last">
-											<div class="mobile-table__label">Created from</div>
-											<div class="mobile-table__wallet">API</div>
-										</div>
-										<div class="mobile-table__actions">
-											<button type="button" class="details-table__delete _icon-delete"><span>Accept</span></button>
-											<button type="button" class="details-table__button">Decline</button>
-											<button type="button" class="details-table__button details-table__button-details">Details</button>
-										</div>
-									</div>
-									<button type="button" class="mobile-table__show-more">
-										Show Details
-										<span></span>
-									</button>
-								</div>
+										</td>
+										<td class="completed-table__column-status">
+											<div class="payment-links__table-label">Status</div>
+											<div class="payment-links__table-status completed">Completed</div>
+										</td>
+										<td class="completed-table__column-time-fee">
+											<div class="payment-links__table-label">Fee</div>
+											<div class="payment-links__table-fee">25 USDT</div>
+										</td>
+										<td class="completed-table__column-user-info">
+											<div class="payment-links__table-label">User info</div>
+											<div class="payment-links__table-user-info">example@gmail.com</div>
+										</td>
+										<td class="completed-table__column-wallet">
+											<div class="payment-links__table-label">Wallet</div>
+											<div class="payment-links__table-wallet">hfksu5jhf67ikmf739ksnhfk37jfngjd</div>
+										</td>
+									</tr>
+								</table>
 							</div>
-						</div>
-						<div class="transactions__footer">
-							<nav class="transactions__pagionation">
-								<button class="transactions__pagionation-arrow"></button>
-								<ul class="transactions__pagionation-list">
-									<li><a href="#" class="_active">1</a></li>
-									<li><a href="#">2</a></li>
-									<li><a href="#">3</a></li>
-									<li><a href="#">4</a></li>
-									<li class="dots">...</li>
-									<li><a href="#">5</a></li>
-								</ul>
-								<button class="transactions__pagionation-arrow"></button>
-							</nav>
-							<div class="transactions__line">
-								<div data-da=".transactions__footer, 480" class="transactions__result">Result 25 of 435</div>
-								<div class="transactions__quantity">
-									<div class="transactions__quantity-head">
-										25
-									</div>
-									<div class="transactions__quantity-dropdown">
-										<div class="transactions__quantity-item">26</div>
-										<div class="transactions__quantity-item">27</div>
-										<div class="transactions__quantity-item">28</div>
-									</div>
-								</div>
+							<div data-tabs-item class="payment-links__block">
+								<table class="payment-links__table expired-table">
+									<tr class="payment-links__table-header">
+										<th>Amount</th>
+										<th>Date</th>
+										<th>Status</th>
+										<th>Time Limit</th>
+										<th>Remaining time</th>
+									</tr>
+									<tr class="payment-links__table-inner">
+										<td class="expired-table__column-sum">
+											<div class="payment-links__table-label">Amount</div>
+											<div class="payment-links__table-sum">$200 USD</div>
+										</td>
+										<td class="expired-table__column-date">
+											<div class="payment-links__table-label">Date</div>
+											<div class="payment-links__table-data">
+												<div class="payment-links__table-date">01.01.2023</div>
+												<div class="payment-links__table-time">14:20</div>
+											</div>
+										</td>
+										<td class="expired-table__column-status">
+											<div class="payment-links__table-label">Status</div>
+											<div class="payment-links__table-status expired">Expired</div>
+										</td>
+										<td class="expired-table__column-time-limit">
+											<div class="payment-links__table-label">Time Limit</div>
+											<div class="payment-links__table-time-limit">01:00:00</div>
+										</td>
+										<td class="expired-table__column-remaining-time">
+											<div class="payment-links__table-label">Remaining time</div>
+											<div class="payment-links__table-remaining-time red">00:00:00</div>
+										</td>
+									</tr>
+									<tr class="payment-links__table-inner">
+										<td class="expired-table__column-sum">
+											<div class="payment-links__table-label">Amount</div>
+											<div class="payment-links__table-sum">$200 USD</div>
+										</td>
+										<td class="expired-table__column-date">
+											<div class="payment-links__table-label">Date</div>
+											<div class="payment-links__table-data">
+												<div class="payment-links__table-date">01.01.2023</div>
+												<div class="payment-links__table-time">14:20</div>
+											</div>
+										</td>
+										<td class="expired-table__column-status">
+											<div class="payment-links__table-label">Status</div>
+											<div class="payment-links__table-status expired">Expired</div>
+										</td>
+										<td class="expired-table__column-time-limit">
+											<div class="payment-links__table-label">Time Limit</div>
+											<div class="payment-links__table-time-limit">01:00:00</div>
+										</td>
+										<td class="expired-table__column-remaining-time">
+											<div class="payment-links__table-label">Remaining time</div>
+											<div class="payment-links__table-remaining-time red">00:00:00</div>
+										</td>
+									</tr>
+									<tr class="payment-links__table-inner">
+										<td class="expired-table__column-sum">
+											<div class="payment-links__table-label">Amount</div>
+											<div class="payment-links__table-sum">$200 USD</div>
+										</td>
+										<td class="expired-table__column-date">
+											<div class="payment-links__table-label">Date</div>
+											<div class="payment-links__table-data">
+												<div class="payment-links__table-date">01.01.2023</div>
+												<div class="payment-links__table-time">14:20</div>
+											</div>
+										</td>
+										<td class="expired-table__column-status">
+											<div class="payment-links__table-label">Status</div>
+											<div class="payment-links__table-status expired">Expired</div>
+										</td>
+										<td class="expired-table__column-time-limit">
+											<div class="payment-links__table-label">Time Limit</div>
+											<div class="payment-links__table-time-limit">01:00:00</div>
+										</td>
+										<td class="expired-table__column-remaining-time">
+											<div class="payment-links__table-label">Remaining time</div>
+											<div class="payment-links__table-remaining-time red">00:00:00</div>
+										</td>
+									</tr>
+								</table>
 							</div>
 						</div>
 					</div>
@@ -524,7 +445,6 @@
 			</main>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240208234657"></script>
 	<div id="log-out" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content logout">
@@ -1096,6 +1016,7 @@
 		</div>
 	</div>
 
+	<script src="js/app.min.js?_v=20240208234657"></script>
 </body>
 
 </html>
